@@ -28,9 +28,11 @@ Create a snapshot of current database, save to file 'netbox_backup.sql'
 
 Copy the backup from the database container to a newly created (mkdir backups) backups directory
 
-```$ docker cp netbox-docker-postgres-1:/tmp/netbox_backup.sql ~/git/netbox-docker/backups/netbox_db_backup.sql
+```
+$ docker cp netbox-docker-postgres-1:/tmp/netbox_backup.sql ~/git/netbox-docker/backups/netbox_db_backup.sql
 
-Successfully copied 1.33MB to /home/bea/git/netbox-docker/backups/netbox_db_backup.sql```
+Successfully copied 1.33MB to /home/bea/git/netbox-docker/backups/netbox_db_backup.sql
+```
 
 Create a compressed tar archive with the specified name/file path from the specified file (path)
 
