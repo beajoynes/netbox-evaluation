@@ -16,7 +16,8 @@ Run the continers and navigate to the [netbox page](http://192.168.0.92:8000/) w
 
 `docker compose up -d`
 
-`docker ps #check containers are up and running`
+Check containers are all up and running using
+`docker ps -a`
 
 <img width="959" height="499" alt="image" src="https://github.com/user-attachments/assets/d468145b-2228-455d-825f-4853dad3f114" />
 
