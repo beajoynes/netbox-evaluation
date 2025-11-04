@@ -9,6 +9,7 @@ From laptop/Ubuntu-24.04 terminal, SSH into local host (in this case my Almalinu
 
 `
 ssh bea@192.168.0.92
+
 cd git/netbox-docker/
 `
 
@@ -16,5 +17,6 @@ Run the continers and navigate to the [netbox page](http://192.168.0.92:8000/) w
 
 `
 docker compose up -d
+
 docker ps #check containers are up and running
 `
