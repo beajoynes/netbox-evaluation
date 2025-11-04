@@ -115,6 +115,45 @@ Change cron job to
 
 And navigate do cat /tmp/crontab.txt to see output of attempting job
 
+## Backup to another machine (VM)
+
+For this I have gone from my backups in my Almalinux VM (AlmaVM/localhost) to my google cloud VM (symbo).
+
+In local host (where backups are saved)
+
+`cat .ssh/id_ed25519.pub`
+
+Copy out response (should start ssh-ed25519 AAAA....) and add to `~/.ssh/authorized_keys` in other machine, I attempted to add the public SSH to the google cloud UI but this didn't add to the authorised key file so I used nano and added manually. Save.
+
+Check connection using `ssh user@othervm` the `exit`.
+
+Change to backups directory e.g. `cd /git/netbox-docker/backups/auto_backups`.
+
+Copy the desired backup to tmp directory on the other machine.
+```
+$ scp localhost.localdomain_netbox_media_backup_20251104_1610.tar.gz beajoynes@34.134.76.112:/tmp
+localhost.localdomain_netbox_media_backup_20251104_1610.t 100%  254     2.3KB/s   00:00
+```
+Check other machine has received back up. Repeat for both postgres and media backup.
+
+Note the backup can be copied to any file in the other machine (for example create a file for backups `mkdir ~/netbox_backups`.
 
 
 # Restores
+
+Create a compressed tar archive of the backup you wish to copy over. If you haven't already, use `git clone https://github.com/netbox-community/netbox-docker.git` to download the netbox-docker repository.
+```
+tar xzvf /tmp/localhost.localdomain_netbox_media_backup_20251104_1610.tar.gz -C /tmp   - makes directory ??
+cd ~/git/netbox-docker
+docker compose up -d
+docker stop netbox-docker-netbox-1
+docker exec -it netbox-docker-postgres-1 psql -U netbox -d postgres -c "DROP DATABASE netbox;"
+docker exec -it netbox-docker-postgres-1 psql -U netbox -d postgres -c "CREATE DATABASE netbox OWNER netbox;"
+
+
+cat /tmp/netbox_backup.sql | docker exec -i netbox-docker-postgres-1 psql -U netbox -d netbox
+docker compose down
+docker compose up -d
+docker ps
+```
+
