@@ -25,7 +25,7 @@ Check containers are all up and running using
 
 
 # Backups
-## [One time backup onto current local machine (VM)](#one-time-backup)
+## One time backup onto current local machine (VM)
 ### Netbox database (postgres)
 Create a snapshot of current database, save to file 'netbox_backup.sql'
 
@@ -123,8 +123,7 @@ Change cron job to
 And navigate do cat /tmp/crontab.txt to see output of attempting job
 
 ## Backup to another machine (VM)
-First follow, [One time backup onto current local machine (VM)](#one-time-backup)
-
+First follow, [One time backup onto current local machine (VM)](#one-time-backup-onto-current-local-machine-(VM))
 For this I have gone from my backups in my Almalinux VM (AlmaVM/localhost) to my google cloud VM (symbo).
 
 In local host (where backups are saved)
