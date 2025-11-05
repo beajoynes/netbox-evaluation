@@ -67,7 +67,7 @@ drwxrwxrwt. 1 root root  40 Nov  4 12:03 .
 drwxr-xr-x. 1 root root  39 Nov  4 11:03 ..
 -rw-r--r--. 1 unit root 254 Nov  4 12:03 netbox_media_backup.tar.gz
 ```
-Copy media backup tar archive from conteiner to local backup directory
+Copy media backup tar archive from container to local backup directory
 ```
 $ docker cp netbox-docker-netbox-1:/tmp/netbox_media_backup.tar.gz  ~/git/netbox-docker/backups/netbox_media_backup.tar.gz`
 Successfully copied 2.05kB to /home/bea/git/netbox-docker/backups/netbox_media_backup.tar.gz
@@ -128,7 +128,7 @@ For this I have gone from my backups in my Almalinux VM (AlmaVM/localhost) to my
 
 In local host (where backups are saved)
 
-`cat .ssh/id_ed25519.pub`
+`cat /home/beajoynes/.ssh/id_ed25519.pub`
 
 Copy out response (should start ssh-ed25519 AAAA....) and add to `~/.ssh/authorized_keys` in other machine, I attempted to add the public SSH to the google cloud UI but this didn't add to the authorised key file so I used nano and added manually. Save.
 
