@@ -19,7 +19,8 @@ Run the continers and navigate to the [netbox page](http://192.168.0.92:8000/) w
 Check containers are all up and running using
 `docker ps -a`
 
-<img width="959" height="499" alt="image" src="https://github.com/user-attachments/assets/d468145b-2228-455d-825f-4853dad3f114" />
+<img width="1918" height="997" alt="image" src="https://github.com/user-attachments/assets/8f22c41f-9bf7-430d-898e-95ce69a58c94" />
+
 
 # Backups
 ## One time backup onto current local machine (VM)
