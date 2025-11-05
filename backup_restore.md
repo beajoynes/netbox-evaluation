@@ -162,3 +162,5 @@ docker ps
 ```
 
 Navigate to other virtual machine's netbox server   http://34.134.76.112:8000
+
+<img width="1827" height="1068" alt="image" src="https://github.com/user-attachments/assets/c2323784-386c-43d0-a8ae-da11fed1af5a" />
