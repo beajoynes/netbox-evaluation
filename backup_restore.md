@@ -94,7 +94,7 @@ find "$backup_dir" -type f -mtime +3 -name "*.tar.gz" -exec rm -f {} \;
 Make sure the file has execute priviliges using
 `chmod +x netbox_backup.sh`
 
-To create cron job (on some, you are given an option for editor, in Alma I used 'export EDITOR=nano' to set my environment editor to nano as I was not used to vi editor.
+To create cron job (on some, you are given an option for editor, in Alma I used 'export EDITOR=nano' to set my environment editor to nano as I was not used to vi editor).
 
 `crontab -e`
 
@@ -146,6 +146,10 @@ Create a compressed tar archive of the backup you wish to copy over. If you have
 tar xzvf /tmp/localhost.localdomain_netbox_media_backup_20251104_1610.tar.gz -C /tmp   - makes directory ??
 cd ~/git/netbox-docker
 docker compose up -d
+
+<img width="1840" height="1069" alt="image" src="https://github.com/user-attachments/assets/f2d5033d-d1c7-4eae-ac79-251d56de8256" />
+
+
 docker stop netbox-docker-netbox-1
 docker exec -it netbox-docker-postgres-1 psql -U netbox -d postgres -c "DROP DATABASE netbox;"
 docker exec -it netbox-docker-postgres-1 psql -U netbox -d postgres -c "CREATE DATABASE netbox OWNER netbox;"
