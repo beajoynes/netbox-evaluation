@@ -146,10 +146,10 @@ Create a compressed tar archive of the backup you wish to copy over. If you have
 tar xzvf /tmp/localhost.localdomain_netbox_media_backup_20251104_1610.tar.gz -C /tmp   - makes directory ??
 cd ~/git/netbox-docker
 docker compose up -d
-
+```
 <img width="1840" height="1069" alt="image" src="https://github.com/user-attachments/assets/f2d5033d-d1c7-4eae-ac79-251d56de8256" />
 
-
+```
 docker stop netbox-docker-netbox-1
 docker exec -it netbox-docker-postgres-1 psql -U netbox -d postgres -c "DROP DATABASE netbox;"
 docker exec -it netbox-docker-postgres-1 psql -U netbox -d postgres -c "CREATE DATABASE netbox OWNER netbox;"
