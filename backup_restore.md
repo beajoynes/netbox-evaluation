@@ -141,9 +141,9 @@ Note the backup can be copied to any file in the other machine (for example crea
 
 # Restores
 
-Create a compressed tar archive of the backup you wish to copy over. If you haven't already, use `git clone https://github.com/netbox-community/netbox-docker.git` to download the netbox-docker repository.
+Create a compressed tar archive of the backup you wish to copy over. If you haven't already, use `git clone https://github.com/netbox-community/netbox-docker.git` to download the netbox-docker repository. Creates .sql file.
 ```
-tar xzvf /tmp/localhost.localdomain_netbox_media_backup_20251104_1610.tar.gz -C /tmp   - makes directory ??
+tar xzvf /tmp/localhost.localdomain_netbox_postgres_backup_20251104_1700.sql.tar.gz -C /tmp   
 cd ~/git/netbox-docker
 docker compose up -d
 ```
@@ -161,3 +161,4 @@ docker compose up -d
 docker ps
 ```
 
+Navigate to other virtual machine's netbox server   http://34.134.76.112:8000
