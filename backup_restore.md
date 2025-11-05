@@ -123,7 +123,8 @@ Change cron job to
 And navigate do cat /tmp/crontab.txt to see output of attempting job
 
 ## Backup to another machine (VM)
-First follow, [One time backup onto current local machine (VM)]([#one-time-backup-onto-current-local-machine-(VM)](https://github.com/beajoynes/netbox-evaluation/blob/main/backup_restore.md#one-time-backup-onto-current-local-machine-vm))
+First follow, [one-time-backup-onto-current-local-machine-(VM)](https://github.com/beajoynes/netbox-evaluation/blob/main/backup_restore.md#one-time-backup-onto-current-local-machine-vm)
+
 For this I have gone from my backups in my Almalinux VM (AlmaVM/localhost) to my google cloud VM (symbo).
 
 In local host (where backups are saved)
