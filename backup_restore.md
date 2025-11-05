@@ -145,6 +145,10 @@ Check other machine has received back up. Repeat for both postgres and media bac
 
 Note the backup can be copied to any file in the other machine (for example create a file for backups `mkdir ~/netbox_backups`.
 
+### SSH issues
+I had an issue with connection between my google cloud test1 VM and my parrot OS VM. After attempting different options of troubleshooting, I ended up using ssh the other way round : 
+
+` scp beajoynes@34.39.10.82:/path/to/backup.tar.gz /local/path/ `
 
 # Restores
 
