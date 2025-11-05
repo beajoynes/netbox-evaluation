@@ -148,7 +148,8 @@ tar xzvf /tmp/localhost.localdomain_netbox_postgres_backup_20251104_1700.sql.tar
 cd ~/git/netbox-docker
 docker compose up -d
 ```
-<img width="1840" height="1069" alt="image" src="https://github.com/user-attachments/assets/f2d5033d-d1c7-4eae-ac79-251d56de8256" />
+<img width="1840" height="1069" alt="image" src="https://github.com/user-attachments/assets/95581401-9191-49da-8f88-68aaa9998474" />
+
 
 ```
 docker stop netbox-docker-netbox-1
