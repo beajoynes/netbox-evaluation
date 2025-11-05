@@ -123,6 +123,7 @@ Change cron job to
 And navigate do cat /tmp/crontab.txt to see output of attempting job
 
 ## Backup to another machine (VM)
+First follow, [One time backup onto current local machine (VM)](# One time backup onto current local machine (VM))
 
 For this I have gone from my backups in my Almalinux VM (AlmaVM/localhost) to my google cloud VM (symbo).
 
@@ -152,7 +153,7 @@ I had an issue with connection between my google cloud test1 VM and my parrot OS
 
 # Restores
 
-Create a compressed tar archive of the backup you wish to copy over. If you haven't already, use `git clone https://github.com/netbox-community/netbox-docker.git` to download the netbox-docker repository. Creates .sql file.
+Extract the compressed tar archive of the backup you wish to restore. If you haven't already, use `git clone https://github.com/netbox-community/netbox-docker.git` to download the netbox-docker repository. Creates .sql file.
 ```
 tar xzvf /tmp/localhost.localdomain_netbox_postgres_backup_20251104_1700.sql.tar.gz -C /tmp   
 cd ~/git/netbox-docker
