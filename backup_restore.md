@@ -163,6 +163,8 @@ I had an issue with connection between my google cloud test1 VM and my parrot OS
 # Restores
 
 Extract the compressed tar archive of the backup you wish to restore. If you haven't already, use `git clone https://github.com/netbox-community/netbox-docker.git` to download the netbox-docker repository. Creates .sql file.
+
+## Database
 ```
 tar xzvf /tmp/localhost.localdomain_netbox_postgres_backup_20251104_1700.sql.tar.gz -C /tmp   
 cd ~/git/netbox-docker
@@ -186,3 +188,9 @@ docker ps
 Navigate to other virtual machine's netbox server   http://34.134.76.112:8000
 
 <img width="1827" height="1068" alt="image" src="https://github.com/user-attachments/assets/c2323784-386c-43d0-a8ae-da11fed1af5a" />
+
+## Media
+ ```
+docker cp /tmp/netbox_media_backup.tar.gz netbox-docker-netbox-1:/tmp/netbox_media_backup.tar.gz
+docker exec -it netbox-docker-netbox-1 tar xzvf /tmp/netbox_media_backup.tar.gz -C /
+```
