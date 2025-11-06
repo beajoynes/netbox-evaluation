@@ -2,10 +2,13 @@
 
 Useful docs : https://netboxlabs.com/docs/netbox/administration/replicating-netbox/
 
- Assumes Netbox is being run using docker containers. 
- With the main containers being netbox-docker-netbox-1 and netbox-docker-postgres-1 (for the database)
-I used the [netbox-docker repository](https://github.com/netbox-community/netbox-docker), netbox version : v3.3-2.2.0 
-populated with dummy data from the [netbox-demo-data repository](https://github.com/netbox-community/netbox-demo-data), both found on the netbox-community github.
+* Assumes Netbox is being run using docker containers. 
+* With the main containers being netbox-docker-netbox-1 and netbox-docker-postgres-1 (for the database)
+* Uses the [netbox-docker repository](https://github.com/netbox-community/netbox-docker), netbox version : v3.3-2.2.0, populated with dummy data from the [netbox-demo-data repository](https://github.com/netbox-community/netbox-demo-data), both found on the netbox-community github.
+* Has also been tested between local host google VM (where data was populated through following the [netbox-zero-to-hero course](https://github.com/netbox-community/netbox-zero-to-hero))and remote host parrot OS VM.
+
+
+
 
 From laptop/Ubuntu-24.04 terminal, SSH into local host (in this case my Almalinux virtual machine, AlmaVM) and locate the netbox-docker directory.
 
