@@ -32,30 +32,28 @@ Check containers are all up and running using
 ### Netbox database (postgres)
 Create a snapshot of current database, save to file 'netbox_backup.sql'
 
-`docker exec -it netbox-docker-postgres-1 pg_dump -U netbox -h localhost netbox > /tmp/netbox_backup.sql`
 
 Copy the backup from the database container to a newly created (mkdir backups) backups directory
 
-Or just use:
 `docker exec -it netbox-docker-postgres-1 pg_dump -U netbox -h localhost netbox > ~/git/netbox-docker/backups/netbox_backup.sql`
 
 
-```
-$ docker cp netbox-docker-postgres-1:/tmp/netbox_backup.sql ~/git/netbox-docker/backups/netbox_db_backup.sql
+Create a compressed tar archive with the specified name/file path from the specified file (path). This allows for easier transfer and less disk space needed for storage
 
-Successfully copied 1.33MB to /home/bea/git/netbox-docker/backups/netbox_db_backup.sql
-```
+`tar czvf ~/git/netbox-docker/backups/netbox_backup.sql.tar.gz ~/git/netbox-docker/backups/netbox_backup.sql`
 
-Create a compressed tar archive with the specified name/file path from the specified file (path)
 
-`tar czvf ~/git/netbox-docker/backups/netbox_db_backup.sql.tar.gz ~/git/netbox-docker/backups/netbox_db_backup.sql`
+To stop entire file path being copied over and directories made:
+`beajoynes@test1:~/git/netbox-docker/backups$ tar czvf netbox_backup.sql.tar.gz netbox_backup.sql'
+
+
 ```
 bea@localhost:~/git/netbox-docker/backups$ ls -al
 total 1424
 drwxr-xr-x.  2 bea bea      69 Nov  4 11:52 .
 drwxr-xr-x. 12 bea bea    4096 Nov  4 11:48 ..
--rw-r--r--.  1 bea bea 1329551 Nov  4 11:40 netbox_db_backup.sql
--rw-r--r--.  1 bea bea  122275 Nov  4 11:52 netbox_db_backup.sql.tar.gz
+-rw-r--r--.  1 bea bea 1329551 Nov  4 11:40 netbox_backup.sql
+-rw-r--r--.  1 bea bea  122275 Nov  4 11:52 netbox_backup.sql.tar.gz
 ```
 ### Netbox media 
 Create a compressed tar archive within container
