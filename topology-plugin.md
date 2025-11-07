@@ -3,3 +3,6 @@ Netbox plugin to create topology views/maps from your devices in Netbox. The con
 ## Install
 * https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
 * create plugins_requirements.txt, Dockerfile-plugins, docker-cmpose.override.yml (already there)
+
+
+## Success with TLE populated server
