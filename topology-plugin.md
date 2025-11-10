@@ -18,4 +18,6 @@ Netbox plugin to create topology views/maps from your devices in Netbox. The con
   - Within rack display could be better
  * Want to add more data to understand/ explore better
  * Can download PNG of topology
- * Can rearrange by dragging - though they don't alweays stay where yo uwant, very 'floaty' 
+ * Can rearrange by dragging - though they don't alweays stay where yo uwant, very 'floaty'
+ * can group by sites and racks as well as filter
+ * 
