@@ -41,10 +41,10 @@ services:
     image: netbox:latest-plugins
     pull_policy: never
 ```
-### Enable plugin in configuration.py
+### Enable plugin 
 `nano configuration/plugins.py`
 
-Add `PLUGINS = ["netbox_topology_views"]
+Add `PLUGINS = ["netbox_topology_views"]`
 
 Can add plugin configs here also using `PLUGINS_CONFIG`
 
