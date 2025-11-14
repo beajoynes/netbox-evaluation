@@ -46,7 +46,17 @@ services:
 
 Add `PLUGINS = ["netbox_topology_views"]`
 
-Can add plugin configs here also using `PLUGINS_CONFIG`
+Can add plugin configs here also using `PLUGINS_CONFIG`.
+
+The following allows for fixed and saved coordinates making layouts much nicer and easier to manipulate topology clearly.
+```
+PLUGINS_CONFIG = {
+   "netbox_topology_views": {
+        'allow_coordinates_saving': True,
+        'always_save_coordinates': True
+   }
+ }
+```
 
 ### Build and start 
 ```
