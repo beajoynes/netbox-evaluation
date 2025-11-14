@@ -5,7 +5,7 @@ Netbox plugin to create topology views/maps from your devices in Netbox. The con
 * Installed to container (Netbox-Docker)
 * Custom docker image created
 
-### Creaste and modify files in root folder 
+### Create and modify files in root folder 
 `plugins_requirements.txt`
 *  Add plugin `netbox-topology-views`
 
