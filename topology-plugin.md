@@ -11,7 +11,7 @@ Netbox plugin to create topology views/maps from your devices in Netbox. The con
 
 `Dockerfile-plugins`
 
- Dockerfile used to build custom image with plugin
+* Dockerfile used to build custom image with plugin
 ```
 FROM netboxcommunity/netbox:latest
 
@@ -25,7 +25,7 @@ RUN DEBUG="true" SECRET_KEY="dummydummydummydummydummydummydummydummydummydummy"
     /opt/netbox/venv/bin/python /opt/netbox/netbox/manage.py collectstatic --no-input
 ```
 
-`docker-compose.override.yml'  (already there in netbox docker)
+`docker-compose.override.yml`  (already there in netbox docker)
 
 ```
 services:
