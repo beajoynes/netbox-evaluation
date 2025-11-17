@@ -13,5 +13,17 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 
 
 ## Back ups
+* Important!
+* Backup to local machine
+* Copying back ups to another machine
+* Restoring back ups
 
+## Plugin reviews
+* Topology
+* Drag and drop reorder rack (also proof of multiple plugin use)
+* 
 
+### Telent mini site 
+* MMLite scheme
+* ALMY site - in site connectivity / racks + MTS to mts?
+* Overall data
