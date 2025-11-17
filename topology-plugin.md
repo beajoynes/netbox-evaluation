@@ -68,16 +68,26 @@ Navigate to netbox UI and there is now a Topology Views tab in the menu.
 
 ### Success with TLE populated server
 ### Success with demo data (v4.4) 
+### Success with Telent mini data
+Using the plugin configurations to allow for coordinate saving, it is possible to rearrange map data into a fixed pattern to make diagrams clear and organised.
+
+For example a section of MMLite : 
+<img width="852" height="466" alt="image" src="https://github.com/user-attachments/assets/bdd4c3cc-fd5f-4c2c-a872-c76b077f5318" />
+
 
 ## Review
 
 * Don't understand the filtering system, find it a bit rocky to use the plugin
+Likely due to my incompetence in the area. Still able to get the basics of physical cable connections.
 * I reckon the display could be better :
   - Clearer icons
   - Add icons for WAN routers,  vspheres
+==Can use custom images/icons.==
   - Maybe have names with icons
   - Within rack display could be better
  * Can download PNG of topology
  * Can rearrange by dragging - though they don't alweays stay where yo uwant, very 'floaty'
  * can group by sites and racks as well as filter
  * Want to add more data to understand/ explore better
+
+
