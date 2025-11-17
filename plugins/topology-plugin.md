@@ -1,6 +1,6 @@
 Netbox plugin to create topology views/maps from your devices in Netbox. The connections based on the cables created in Netbox.
 
-## Install
+# Install
 * https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
 * Installed to container (Netbox-Docker)
 * Custom docker image created
@@ -75,7 +75,7 @@ For example a section of MMLite :
 <img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
 
-## Review
+# Review
 
 * Don't understand the filtering system, find it a bit rocky to use the plugin
 <mark> Likely due to my incompetence in the area. Still able to get the basics of physical cable connections. </mark>
@@ -93,3 +93,8 @@ For example a section of MMLite :
  * Want to add more data to understand/ explore better
 
 
+# Further exploration ?
+* Click node to navigate to device page?
+* Add custom icons/images
+* Simplicity of creating 'straight line' topology
+* Creating coordinate groups
