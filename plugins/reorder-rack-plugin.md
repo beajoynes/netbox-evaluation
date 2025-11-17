@@ -1,4 +1,7 @@
+# netbox-reorder-rack
+
 A plugin to allow the ability to reorder rack units in NetBox using a drag and drop interface. 
+* https://github.com/netbox-community/netbox-reorder-rack
 
 ### Environment
 Tested on google cloud virtual machine (test1) using netbox docker. 
