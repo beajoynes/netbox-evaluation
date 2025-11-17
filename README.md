@@ -13,6 +13,8 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 * Netbox backend : BACKUPS
 * Image stroage, uploading, access, display?
 
+## Telent/ NRTS uses !!! Specific, Why use it? ....
+
 ## Back ups
 * Important!
 * Backup to local machine
