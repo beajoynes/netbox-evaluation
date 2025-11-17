@@ -20,10 +20,17 @@ Add plugin to `configuration/plugins.py`
 PLUGINS = ["netbox_reorder_rack"]
 ```
 
-# Build and deply
+## Build and deploy
 ```
 docker compose build --no-cache
 docker compose build up -d
 ```
 
-Navigate to http://34.39.10.82:8000 to check it is working.
+Navigate to http://34.39.10.82:8000 to check it is working. SUCCESS.
+
+# Review
+
+* Smooth, works well
+* Very handy for rearranging, but perhaps won't be used much? I am unsure how often thuis occurs but also it doesn't harm having the plugin available when needed?
+* Has a separate 'unracked devices' section for devices not currently assigned to a rack/slot
+
