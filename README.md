@@ -14,6 +14,4 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 
 ## Back ups
 
-How to : https://github.com/mmorrow24work/digital-twin-containerlab/blob/main/NETBOX/backup_restore.md
-* Add VM public key to backup server (google)
-* Write clear notes to follow for presentation Friday
+
