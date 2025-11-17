@@ -82,6 +82,7 @@ Likely due to my incompetence in the area. Still able to get the basics of physi
 * I reckon the display could be better :
   - Clearer icons
   - Add icons for WAN routers,  vspheres
+<span style="color:blue">some *blue* text</span>
 ==Can use custom images/icons.==
   - Maybe have names with icons
   - Within rack display could be better
