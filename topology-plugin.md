@@ -72,21 +72,23 @@ Navigate to netbox UI and there is now a Topology Views tab in the menu.
 Using the plugin configurations to allow for coordinate saving, it is possible to rearrange map data into a fixed pattern to make diagrams clear and organised.
 
 For example a section of MMLite : 
-<img width="852" height="466" alt="image" src="https://github.com/user-attachments/assets/bdd4c3cc-fd5f-4c2c-a872-c76b077f5318" />
+<img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
 
 ## Review
 
 * Don't understand the filtering system, find it a bit rocky to use the plugin
-Likely due to my incompetence in the area. Still able to get the basics of physical cable connections.
+<mark> Likely due to my incompetence in the area. Still able to get the basics of physical cable connections. </mark>
 * I reckon the display could be better :
   - Clearer icons
   - Add icons for WAN routers,  vspheres
 <mark> Can use custom images/icons. </mark>
   - Maybe have names with icons
+<mark> Toggle 'Node Label items'. Currently using Device type and site. </mark>
   - Within rack display could be better
  * Can download PNG of topology
- * Can rearrange by dragging - though they don't alweays stay where yo uwant, very 'floaty'
+ * Can rearrange by dragging - though they don't alweays stay where you want, very 'floaty'
+<mark> Fixed by adjusting plugin configurations (in plugins.py) to allow coordinate saving. </mark>
  * can group by sites and racks as well as filter
  * Want to add more data to understand/ explore better
 
