@@ -30,10 +30,12 @@ docker compose build --no-cache
 docker compose up -d
 ```
 
+<img width="989" height="717" alt="image" src="https://github.com/user-attachments/assets/6c5f8f75-4582-4537-b321-1c93bcdfca2f" />
+
 # Review
 * Compare to current floorplans :  Maybe not quite ready as there is a lack of usability/ customisation and a couple issues in design stage, but a feesable option with fairly simple coding to make work if it would be of use?
 * In order for racks to display properly, the rack type of the rack should be specified and a width/height set within the type
-* Floorplan dimensions can be set (rectanlge shape only?), metres or feet
+* Floorplan dimensions can be set (rectangle shape only?), metres or feet
 * - Displayed at bottom of plans, can't toggle off or move?
 * Can assign image as background - should be simple to code changing back ground colour atleast?
 * - Attempt with Dover site (added image)
@@ -60,7 +62,7 @@ docker compose up -d
 
 # Use
 * Currently floorplans are stored in DWG format but the 'public' format is PDF
-* - DWG files are binary files used for containing 2D and 3D design data (vector graphics), closely associated with CAD programs.
+* - DWG files are binary files used for containing 2D and 3D design data (vector graphics), closely associated with CAD programs
   - SVG is a popular tool for displaying 2d graphics, charts and illustrtations on websties. A vectror file, can be scaled up or down without losing any resolution.
 * Easy to edit when a change occurs (e.g rack added/removed)
 * Really like how the racks populated are there to add and status is automatically updated.
