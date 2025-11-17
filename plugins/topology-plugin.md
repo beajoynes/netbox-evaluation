@@ -1,9 +1,12 @@
+# netbox-topology-views 
+
 Netbox plugin to create topology views/maps from your devices in Netbox. The connections based on the cables created in Netbox.
+* https://github.com/netbox-community/netbox-topology-views
 
 # Install
 * https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
 * Installed to container (Netbox-Docker)
-* Custom docker image created
+* Create custom docker image
 
 ### Create and modify files in root folder 
 `plugins_requirements.txt`
