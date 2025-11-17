@@ -12,6 +12,9 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 * Netbox-zabbix-sync
 * Netbox backend : BACKUPS
 * Image stroage, uploading, access, display?
+* - Tested with Dover site, adding an image
+  - Can see image previews, with name  - click on to see more details including decription, file details, parent object and changelog 
+  - 
 
 ## Telent/ NRTS uses !!! Specific, Why use it? ....
 
