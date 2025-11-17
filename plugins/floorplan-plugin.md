@@ -16,3 +16,28 @@ Useful - currently we have floor plans of all sites? Baz Chandler/ Ade Prattley
 * export to svg
 
 # Installation
+In netbox-docker directory: 
+`nano plugin_requirements.txt.` add netbox-floorplan-plugin
+
+`nano configuration/plugins.py` :
+```
+PLUGINS = ["netbox_floorplan"]
+```
+
+## Build and deploy
+```
+docker compose build --no-cache
+docker compose up -d
+```
+
+# Review
+* Compre to current floorplans
+* In order for racks to display properly, the rack type of the rack should be specified and a width/height set within the type
+* Floorplan dimensions can be set (rectanlge shape only?), metres or feet
+* Can assign image as background - could upload current floorplans and leave at that? - not sure exactly how? Upload image to site first?
+* 
+
+# Use
+* Currently floorplans are stored in DWG format but the 'public' format is PDF
+* - DWG files are binary files used for containing 2D and 3D design data (vector graphics), closely associated with CAD programs.
+  - SVG is a popular tool for displaying 2d graphics, charts and illustrtations on websties. A vectror file, can be scaled up or down without losing any resolution.
