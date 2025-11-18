@@ -4,7 +4,6 @@ A repository to keep track of netbox learning, exploring and evaluation
 Netbox community github : https://github.com/orgs/netbox-community/repositories?type=all
 
 <ins> USEFUL PLUGINS ? </ins>    (Bold  => unexplored)
-* **Floorplan mapping capabilities for Netbox** : https://github.com/netbox-community/netbox-floorplan-plugin
 * **NetBox Healthcheck** : https://github.com/netbox-community/netbox-healthcheck-plugin
 *  - Trying to understand what this does before implementing
   
@@ -27,7 +26,7 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 ## Plugin reviews
 * Topology
 * Drag and drop reorder rack (also proof of multiple plugin use)
-* Floorplan - Do we currently use? Would it be useful info to have as we have plenty of site images? 
+* Floorplan
 
 ### Telent mini site 
 * MMLite scheme
