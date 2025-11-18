@@ -77,6 +77,9 @@ Using the plugin configurations to allow for coordinate saving, it is possible t
 For example a section of MMLite : 
 <img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
+## Custom images
+* 
+
 
 # Review
 
@@ -93,6 +96,7 @@ For example a section of MMLite :
  * Can rearrange by dragging - though they don't alweays stay where you want, very 'floaty'
 <mark> Fixed by adjusting plugin configurations (in plugins.py) to allow coordinate saving. </mark>
  * can group by sites and racks as well as filter
+ * Could create a filtering system for images/icons by name? or order them alphabetically
  * Want to add more data to understand/ explore better
 
 
