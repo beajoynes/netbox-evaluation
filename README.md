@@ -3,9 +3,7 @@ A repository to keep track of netbox learning, exploring and evaluation
 
 Netbox community github : https://github.com/orgs/netbox-community/repositories?type=all
 
-<ins> USEFUL PLUGINS ? </ins>    (Bold  => unexplored)
-* **NetBox Healthcheck** : https://github.com/netbox-community/netbox-healthcheck-plugin
-*  - Trying to understand what this does before implementing
+
   
 
 * Netbox-zabbix-sync
