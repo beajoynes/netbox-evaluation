@@ -87,7 +87,7 @@ Successfully copied 39.4kB to /home/beajoynes/git/netbox-docker/backups/.
 
 ## Automatic backups using crontab
 
-Using [Mick's script](https://github.com/mmorrow24work/digital-twin-containerlab/blob/main/NETBOX/netbox_backup.sh) as a base. In ~/git/netbox-docker/backups directory, `touch netbox_backup.sh` then `nano netbox_backup.sh` and copy in the following. Differs with location of backup directory and omitting sudo as it creates issues with for my run.
+Using [Mick's script](https://github.com/mmorrow24work/digital-twin-containerlab/blob/main/NETBOX/netbox_backup.sh) as a base. In ~/git/netbox-docker/backups directory, `touch netbox_backup.sh` then `nano netbox_backup.sh` and copy in the following. Differs with location of backup directory and omitting sudo as it creates issues for my run.
 ```
 #!/bin/bash
 
