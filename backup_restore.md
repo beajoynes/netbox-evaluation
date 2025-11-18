@@ -2,14 +2,16 @@ This aims to document the backup and restore process for Netbox.
 
 Useful NetBox docs : https://netboxlabs.com/docs/netbox/administration/replicating-netbox/
 
-* Assumes Netbox is being run using docker containers. 
+# Environment
+
+* Assumes Netbox is being run using docker containers and has already been set up. 
 * With the main containers being netbox-docker-netbox-1 and netbox-docker-postgres-1 (for the database)
 * Uses the [netbox-docker repository](https://github.com/netbox-community/netbox-docker), netbox version : v3.3-2.2.0, populated with dummy data from the [netbox-demo-data repository](https://github.com/netbox-community/netbox-demo-data), both found on the netbox-community github.
 * Has also been tested between local host google VM (where data was populated through following the [netbox-zero-to-hero course](https://github.com/netbox-community/netbox-zero-to-hero))and remote host parrot OS VM.
 * Restore has been completed using a backup from mick's server to my google VM (test1)
 
 
-
+## Start NetBox containers 
 
 From laptop/Ubuntu-24.04 terminal, SSH into local host (in this case my Almalinux virtual machine, AlmaVM) and locate the netbox-docker directory.
 
@@ -39,6 +41,7 @@ Copy the backup from the database container to a newly created (mkdir backups) b
 
 `docker exec -it netbox-docker-postgres-1 pg_dump -U netbox -h localhost netbox > ~/git/netbox-docker/backups/netbox_backup.sql`
 
+> When replicating a database, it may be convenient to exclude changelog data as this can account for a large amount  of the database's size. If so, use `pg_dump ... --exclude-table-data=core_objectchange netbox > netbox.sql`.
 
 Create a compressed tar archive with the specified name/file path from the specified file (path). This allows for easier transfer and less disk space needed for storage
 
