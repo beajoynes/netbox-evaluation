@@ -1,23 +1,25 @@
- This aims to document the backup and restore process for Netbox.
+This aims to document the backup and restore process for Netbox.
 
-Useful docs : https://netboxlabs.com/docs/netbox/administration/replicating-netbox/
+Useful NetBox docs : https://netboxlabs.com/docs/netbox/administration/replicating-netbox/
 
 * Assumes Netbox is being run using docker containers. 
 * With the main containers being netbox-docker-netbox-1 and netbox-docker-postgres-1 (for the database)
 * Uses the [netbox-docker repository](https://github.com/netbox-community/netbox-docker), netbox version : v3.3-2.2.0, populated with dummy data from the [netbox-demo-data repository](https://github.com/netbox-community/netbox-demo-data), both found on the netbox-community github.
 * Has also been tested between local host google VM (where data was populated through following the [netbox-zero-to-hero course](https://github.com/netbox-community/netbox-zero-to-hero))and remote host parrot OS VM.
+* Restore has been completed using a backup from mick's server to my google VM (test1)
 
 
 
 
 From laptop/Ubuntu-24.04 terminal, SSH into local host (in this case my Almalinux virtual machine, AlmaVM) and locate the netbox-docker directory.
 
-`ssh bea@192.168.0.92`
+```
+ssh bea@192.168.0.92
 
-`cd git/netbox-docker/`
+cd git/netbox-docker/
+```
 
-
-Run the continers and navigate to the [netbox page](http://192.168.0.92:8000/) which should be at http://localhost:8000.
+Run the containers and navigate to the [netbox page](http://192.168.0.92:8000/) which should be at http://localhost:8000.
 
 `docker compose up -d`
 
