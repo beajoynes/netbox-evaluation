@@ -5,6 +5,12 @@ not present in the core appliation.
 Utilise plugins with netbox-docker created by users within the Netbox Community on github by creating a custom 
 docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins.
 
+## Plugins examples :
+* Validity : Validity is the NetBox plugin to write "auto tests" for your network devices. You define compliance tests and Validity checks device state or configuration against these tests. Main use cases : configuration compliance and pre/post configuration checks.
+* Documents : Faciliate the storage of site, circuit, device type and device specific documents within NetBox
+* Interface synchronisation : Allows you to compare and synchronize interface names and types between devices and device types in NetBox. It can be useful for finding and correcting inconsistencies between interfaces when changing the device type.
+* Nbservice: ITSM mapping.
+
 
 ## Capabilities
 * Add new data models (tables in the SQL database)
