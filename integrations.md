@@ -10,7 +10,10 @@ Types of operation :
 * `PUT`/ `PATCH` :  Modify an existing object.
   - `PUT` requires all mandatory fields to be specified
   - `PATCH` expects only the field that is being modified to be specified.
+* `DELETE` : Delete an existing object.
+* `OPTIONS`
 
+  
 ### Postman 
 * DEsktop app/ web UI for REST API requests. Allows for you to keep collections of requests to be bale to repeat and troubleshoot, creating body of requests and returning outputs in multiple formats (JSON, ...)
 
