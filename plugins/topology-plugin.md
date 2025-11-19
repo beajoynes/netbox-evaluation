@@ -78,7 +78,7 @@ For example a section of MMLite :
 <img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
 ## Custom images
-* 
+* Can't find the path where images are stored for the netbox-docker version of plugin
 
 
 # Review
@@ -97,6 +97,8 @@ For example a section of MMLite :
 <mark> Fixed by adjusting plugin configurations (in plugins.py) to allow coordinate saving. </mark>
  * can group by sites and racks as well as filter
  * Could create a filtering system for images/icons by name? or order them alphabetically
+ * Could add the ability to add labels for cables for lengths etc?
+ * Could add the ability to REname topology file before download? With default as the name of the saved filter?
  * Want to add more data to understand/ explore better
 
 
