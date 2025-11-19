@@ -78,7 +78,17 @@ For example a section of MMLite :
 <img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
 ## Custom images
-* Can't find the path where images are stored for the netbox-docker version of plugin
+* Create and download custom image (I used Canva)
+* `scp` from local machine to remote machine (ssh keys need to be exchanged before)
+  ```
+  scp '.\Downloads\telentOS.png' beajoynes@34.39.10.82:/home/beajoynes/git/netbox-docker/topology_images
+  ```
+* `docker cp` into netbox container
+  ```
+  docker cp topology_images/telentOS.png netbox-docker-netbox-1:/opt/netbox/netbox/static/netbox_topology_views/img
+  ```
+* Under the 'Topology views > Preferences > Images' tab lect images to use for device types and power types, click save to apply.
+  <img width="603" height="329" alt="image" src="https://github.com/user-attachments/assets/e0b1f598-5b1d-4a99-b009-cda9f84ef160" />
 
 
 # Review
