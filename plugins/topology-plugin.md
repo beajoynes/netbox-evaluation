@@ -88,10 +88,8 @@ For example a section of MMLite :
   docker cp topology_images/telentOS.png netbox-docker-netbox-1:/opt/netbox/netbox/static/netbox_topology_views/img
   ```
 * Under the 'Topology views > Preferences > Images' tab lect images to use for device types and power types, click save to apply.
-<figure>
-    <img width="603" height="329" alt="image" src="https://github.com/user-attachments/assets/e0b1f598-5b1d-4a99-        b009-cda9f84ef160" />
-    <figcaption> Topology with custom images (purple) for some device types. </figcaption>
-</figure>
+
+<img width="603" height="329" alt="image" src="https://github.com/user-attachments/assets/e0b1f598-5b1d-4a99-        b009-cda9f84ef160" />
 
 
 # Review
