@@ -12,9 +12,12 @@ DCIM : Data centre infrastructure management
 
 IPAM : IP address management
 
+### Preferred environment  
+Google cloud virtual machine running netbox docker.
+
 ### Features
 * Plugins
-* Integrations : Netbox-zabbix-sync, REST API
+* Integrations : Netbox-zabbix-sync, REST API, Ansible
 * Netbox backend : BACKUPS
 * Image stroage, uploading, access, display?
 * - Tested with Dover site, adding an image
