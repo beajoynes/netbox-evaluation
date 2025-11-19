@@ -89,7 +89,8 @@ For example a section of MMLite :
   ```
 * Under the 'Topology views > Preferences > Images' tab lect images to use for device types and power types, click save to apply.
 
-<img width="603" height="329" alt="image" src="https://github.com/user-attachments/assets/e0b1f598-5b1d-4a99-        b009-cda9f84ef160" />
+<img width="1239" height="656" alt="image" src="https://github.com/user-attachments/assets/9d374efd-8434-4790-8cde-628f6bd485c8" />
+
 
 
 # Review
