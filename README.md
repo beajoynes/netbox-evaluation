@@ -12,8 +12,13 @@ DCIM : Data centre infrastructure management
 
 IPAM : IP address management
 
-### Preferred environment  
-Google cloud virtual machine running netbox docker.
+### Environments 
+So far used a containerised version of NetBox : NetBox-docker.
+Ran with :
+* Google cloud virtual machine (ssh through Ubuntu-24.04)
+* Ubuntu virtual machine on HyperV (ssh through WSL)
+* ParrotOS virtual machine
+* Alma virtual machine - used with an older version of NetBox (v3.3.2?)
 
 ### Features
 * Plugins
