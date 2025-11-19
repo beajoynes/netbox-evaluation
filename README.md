@@ -43,3 +43,6 @@ IPAM : IP address management
 * ALMY site - in site connectivity / racks + MTS to mts?
 * Overall data
 
+## Alternatives
+* Device42
+* Infoblox
