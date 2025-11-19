@@ -7,6 +7,11 @@ Netbox is a central nervous system or 'source of truth' for an entire network in
 * Central source of truth
 * Migrate from spreadsheets = fewer errors, ease of use
 
+
+DCIM : Data centre infrastructure management
+
+IPAM : IP address management
+
 ### Features
 * Plugins
 * Integrations : Netbox-zabbix-sync, REST API
@@ -17,6 +22,10 @@ Netbox is a central nervous system or 'source of truth' for an entire network in
 
 
 ## Telent/ NRTS uses !!! Specific, Why use it? ....
+* Update current network infrastructure records
+* Saving time and reducing errors as multiple spreadsheets currently need to be updated when changes are made
+* Central system
+
 
 ## Back ups
 * Important!
