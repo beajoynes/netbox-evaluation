@@ -5,14 +5,29 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 
 Netbox is a central nervous system or 'source of truth' for an entire network infrastructure.
 * Central source of truth
+* Solution for modeling and documenting mnetwork infrastructure
 * Migrate from spreadsheets = fewer errors, ease of use
-
+  
+https://github.com/netbox-community/netbox/blob/main/docs/media/misc/reference_architecture.png
 
 DCIM : Data centre infrastructure management
 
 IPAM : IP address management
 
-### Environments 
+## Features
+* Comprehensive data model
+* Focused development
+* Customisable
+  - 
+  - Plugins
+  - Integrations : Netbox-zabbix-sync, REST API, Ansible
+* Netbox backend : BACKUPS
+* Image stroage, uploading, access, display?
+* - Tested with Dover site, adding an image
+  - Can see image previews, with name  - click on to see more details including decription, file details, parent object and changelog 
+
+
+## Environments 
 So far used a containerised version of NetBox : NetBox-docker.
 Ran with :
 * Google cloud virtual machine (ssh through Ubuntu-24.04)
@@ -20,13 +35,14 @@ Ran with :
 * ParrotOS virtual machine
 * Alma virtual machine - used with an older version of NetBox (v3.3.2?)
 
-### Features
-* Plugins
-* Integrations : Netbox-zabbix-sync, REST API, Ansible
-* Netbox backend : BACKUPS
-* Image stroage, uploading, access, display?
-* - Tested with Dover site, adding an image
-  - Can see image previews, with name  - click on to see more details including decription, file details, parent object and changelog 
+### NetBox Docker
+* Faster deployment
+* Eliminate dependency conflicts - as all components are packaged into a single image
+* Ensure consistent environments across development and testing
+* Simplified upgrades
+* Deploy with docker compose 
+
+
 
 
 ## Telent/ NRTS uses !!! Specific, Why use it? ....
