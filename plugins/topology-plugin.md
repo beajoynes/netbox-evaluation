@@ -77,6 +77,13 @@ Using the plugin configurations to allow for coordinate saving, it is possible t
 For example a section of MMLite : 
 <img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
+<img width="1504" height="639" alt="image" src="https://github.com/user-attachments/assets/1516e8bd-ebf5-4841-8728-46aa60ca9cdf" />
+
+
+<img width="1520" height="664" alt="topology" src="https://github.com/user-attachments/assets/c5b89135-fde2-4d26-ae2b-6b72079564fe" />
+
+
+
 ## Custom images
 * Create and download custom image (I used Canva)
 * `scp` from local machine to remote machine (ssh keys need to be exchanged before)
@@ -87,9 +94,15 @@ For example a section of MMLite :
   ```
   docker cp topology_images/telentOS.png netbox-docker-netbox-1:/opt/netbox/netbox/static/netbox_topology_views/img
   ```
+
+Don't need to restart containers, just refresh web page. 
+
 * Under the 'Topology views > Preferences > Images' tab lect images to use for device types and power types, click save to apply.
 
 <img width="1239" height="656" alt="image" src="https://github.com/user-attachments/assets/9d374efd-8434-4790-8cde-628f6bd485c8" />
+
+<img width="1486" height="578" alt="image" src="https://github.com/user-attachments/assets/a2be7408-6bdf-4686-a764-18a3878c2c00" />
+
 
 
 
@@ -111,8 +124,7 @@ For example a section of MMLite :
  * Could create a filtering system for images/icons by name? or order them alphabetically
  * Could add the ability to add labels for cables for lengths etc?
  * Could add the ability to REname topology file before download? With default as the name of the saved filter?
- * Want to add more data to understand/ explore better
-
+ * Image resolution on download??
 
 # Further exploration ?
 * Click node to navigate to device page?
@@ -120,3 +132,4 @@ For example a section of MMLite :
 * Simplicity of creating 'straight line' topology
 * Creating coordinate groups
 * Saved filters disappear with database restore
+* Want to add more data to understand/ explore better
