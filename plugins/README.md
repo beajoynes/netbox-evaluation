@@ -38,3 +38,6 @@ Unable to :
 * Override core templates
 * Modify core settings
 * Disable core components
+
+
+# Plugin backups ??
