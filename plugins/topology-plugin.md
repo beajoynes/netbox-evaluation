@@ -99,6 +99,8 @@ Don't need to restart containers, just refresh web page.
 
 * Under the 'Topology views > Preferences > Images' tab lect images to use for device types and power types, click save to apply.
 
+<img width="1138" height="795" alt="image" src="https://github.com/user-attachments/assets/51ef2b27-5143-45bb-9336-727481500138" />
+
 <img width="1239" height="656" alt="image" src="https://github.com/user-attachments/assets/9d374efd-8434-4790-8cde-628f6bd485c8" />
 
 <img width="1486" height="578" alt="image" src="https://github.com/user-attachments/assets/a2be7408-6bdf-4686-a764-18a3878c2c00" />
