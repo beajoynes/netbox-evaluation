@@ -37,10 +37,10 @@ Ran with :
 
 ### NetBox Docker
 * Faster deployment
-* Eliminate dependency conflicts - as all components are packaged into a single image
+* Eliminate dependency conflicts - as all components are packaged into a single image, ran in it's own isolated environment
 * Ensure consistent environments across development and testing
 * Simplified upgrades
-* Deploy with docker compose 
+* Deploy with docker compose - single file
 
 
 
