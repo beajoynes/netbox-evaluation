@@ -119,3 +119,4 @@ For example a section of MMLite :
 * Add custom icons/images
 * Simplicity of creating 'straight line' topology
 * Creating coordinate groups
+* Saved filters disappear with database restore
