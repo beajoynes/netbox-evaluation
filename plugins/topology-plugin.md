@@ -108,7 +108,12 @@ Don't need to restart containers, just refresh web page.
 <img width="1486" height="578" alt="image" src="https://github.com/user-attachments/assets/a2be7408-6bdf-4686-a764-18a3878c2c00" />
 
 
+## Backups
+### Backup custom images/icons 
+Create archive, similar to media back up, but for (custom) image directory
 
+### Backup saved filters
+??? Anything else ???
 
 # Review
 
@@ -129,7 +134,7 @@ Don't need to restart containers, just refresh web page.
  * Could add the ability to add labels for cables for lengths etc?
  * Could add the ability to REname topology file before download? With default as the name of the saved filter?
  * Image resolution on download??
- * Plugin backups
+
 
 # Further exploration ?
 * Click node to navigate to device page?
@@ -138,3 +143,4 @@ Don't need to restart containers, just refresh web page.
 * Creating coordinate groups
 * Saved filters disappear with database restore
 * Want to add more data to understand/ explore better
+* Plugin backups
