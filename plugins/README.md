@@ -15,6 +15,7 @@ docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netb
 * **Inventory** : Keep track of hardware, whether it is installed or in storage.
 * **Lifecycle** : Hardware EOL/EOS, License and support contract tracking.
 * **Data flows** : Document data flows between devices and applications.
+* **Branching** : Branching support to stage, review and collaborate on changes before applying them.
   
 
 
