@@ -11,7 +11,7 @@ docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netb
 * **Interface synchronisation** : Allows you to compare and synchronize interface names and types between devices and device types in NetBox. It can be useful for finding and correcting inconsistencies between interfaces when changing the device type.
 * **Nbservice**: ITSM mapping.
 * **NetBox Healthcheck** : Provides health check monitors that can be queried to make sure that the service is running in good condition.
-* **Secrets** : Stroes secrets in the database encrypted with a public key, can assign to any object, inlcuding contacts to associate them with a asecret (e.g. SSH key).
+* **Secrets** : Stores secrets in the database encrypted with a public key, can assign to any object, inlcuding contacts to associate them with a asecret (e.g. SSH key).
 * **Inventory** : Keep track of hardware, whether it is installed or in storage.
 * **Lifecycle** : Hardware EOL/EOS, License and support contract tracking.
 * **Data flows** : Document data flows between devices and applications.
