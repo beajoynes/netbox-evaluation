@@ -126,18 +126,18 @@ Create archive, similar to media back up, but for (custom) image directory
   - Maybe have names with icons
 <mark> Toggle 'Node Label items'. Currently using Device type and site. </mark>
   - Within rack display could be better
- * Can download PNG of topology
+ * Can download PNG/XML of topology - SVG??
  * Can rearrange by dragging - though they don't alweays stay where you want, very 'floaty'
 <mark> Fixed by adjusting plugin configurations (in plugins.py) to allow coordinate saving. </mark>
  * can group by sites and racks as well as filter
  * Could create a filtering system for images/icons by name? or order them alphabetically
  * Could add the ability to add labels for cables for lengths etc?
- * Could add the ability to REname topology file before download? With default as the name of the saved filter?
+ * Could add the ability to rename topology file before download? With default as the name of the saved filter?
  * Image resolution on download??
+ * Can't click node to navigate to device page? <mark> DOUBLE CLICK!! </mark>
 
 
 # Further exploration ?
-* Click node to navigate to device page?
 * Add custom icons/images
 * Simplicity of creating 'straight line' topology
 * Creating coordinate groups
