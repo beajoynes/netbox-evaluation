@@ -1,6 +1,7 @@
 # REST API
 
 Representational state transfer.
+https://netboxlabs.com/docs/netbox/integrations/rest-api/
 
 Employs HTTP requests and JSON (JavaScript Object Notation to facilitate create, retrieve, update adn delete (CRUD)
 operations on objects within NetBox (or any application).
