@@ -134,7 +134,9 @@ Create archive, similar to media back up, but for (custom) image directory
  * Could add the ability to add labels for cables for lengths etc?
  * Could add the ability to rename topology file before download? With default as the name of the saved filter?
  * Image resolution on download??
+ * Save image as SVG not just PNG/XML?
  * Can't click node to navigate to device page? <mark> DOUBLE CLICK!! </mark>
+* Can add current schematics as files to site (e.t.c)?
 
 
 # Further exploration ?
@@ -144,3 +146,6 @@ Create archive, similar to media back up, but for (custom) image directory
 * Saved filters disappear with database restore
 * Want to add more data to understand/ explore better
 * Plugin backups
+* How to save views? Will it stay set once it is originally set ?
+* Create topology then save and add as file to site (e.t.c)? Or can it auto link to topology views page
+
