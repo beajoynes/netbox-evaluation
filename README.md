@@ -11,9 +11,6 @@ Netbox is a central nervous system or 'source of truth' for an entire network in
 <img width="948" height="570" alt="image" src="https://github.com/user-attachments/assets/35207439-f9fd-4f01-8ea8-de30b17da0be" />
 
 
-NetBox docs on Getting started and planning to use NetBox : https://netboxlabs.com/docs/netbox/getting-started/planning/
-
-
 DCIM : Data centre infrastructure management
 
 IPAM : IP address management
@@ -22,7 +19,6 @@ IPAM : IP address management
 * Comprehensive data model
 * Focused development
 * Customisable
-  - 
   - Plugins
   - Integrations : Netbox-zabbix-sync, REST API, Ansible
 * Netbox backend : BACKUPS
@@ -47,13 +43,17 @@ Ran with :
 * Deploy with docker compose - single file
 
 
-
-
 ## Telent/ NRTS uses !!! Specific, Why use it? ....
 * Update current network infrastructure records
 * Saving time and reducing errors as multiple spreadsheets currently need to be updated when changes are made
 * Central system
 
+## Using / migrating to NetBox
+NetBox docs on Getting started and planning to use NetBox : https://netboxlabs.com/docs/netbox/getting-started/planning/
+* Identify current sources of truth
+* Determine what to move - Although the current release might not support a particular type of object, there may be plans to add support for it in a future release
+* Validate existing data
+* Order of operations (recommended) - self nesting models (e.g. Tenant Group, Region, Site Group, Location) can have a recursive hierarchy, for example a region representing both countries and cities with cities nested under countries.
 
 ## Back ups
 * Important!
@@ -65,6 +65,7 @@ Ran with :
 * Drag and drop reorder rack (also proof of multiple plugin use)
 * Floorplan
 * Topology
+* branching
 
 ### Telent mini site (Topology plugin)
 * MMLite scheme
