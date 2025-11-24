@@ -1,6 +1,6 @@
 # Branching plugin - [netbox-branching](https://github.com/netboxlabs/netbox-branching)
 
-[Officicial NetBox branching docs](https://netboxlabs.com/docs/extensions/branching/) 
+[Officicial NetBox extensions branching docs](https://netboxlabs.com/docs/extensions/branching/) 
 
 ## Description
 A netbox plugin that introduces branching functionality - this is now an 'official' NetBoxLabs plugin so it is owned and 
