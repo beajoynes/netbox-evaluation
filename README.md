@@ -8,7 +8,8 @@ Netbox is a central nervous system or 'source of truth' for an entire network in
 * Solution for modeling and documenting mnetwork infrastructure
 * Migrate from spreadsheets = fewer errors, ease of use
   
-https://github.com/netbox-community/netbox/blob/main/docs/media/misc/reference_architecture.png
+<img width="948" height="570" alt="image" src="https://github.com/user-attachments/assets/35207439-f9fd-4f01-8ea8-de30b17da0be" />
+
 
 NetBox docs on Getting started and planning to use NetBox : https://netboxlabs.com/docs/netbox/getting-started/planning/
 
