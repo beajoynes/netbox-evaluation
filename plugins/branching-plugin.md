@@ -26,20 +26,24 @@ Use to make changes to the service network without interferring with it's integr
 * Bea 24-11-2025
 
 ## Evaluation comments
-* Can see when and who merged a branch, changes made etc
+* Clear details to see when and who merged a branch, changes made etc
 * Can restrict number of (working) branches that can exist simultaneously (default is no maximum)
 * Can activate and deactivate branches using REST API - it will be provisioned automatically (same as UI)
+* Sync **unrelated** changes in main to branch while working on it.
+
 
 ## Review 
-* Very useful concept - definitely can be used
 
+* Very useful concept
+* Definitely can be used to preserve integrity of network and allow collaborative and highly accurate changes
+* Clear details
 
 
 ## Further actions (and some answers)
-* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync???   - Changes to main branch are synced to current branch - SYNC WORKS FOR UNRELATED CHANGES ONLY!
+
 * How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
 - In configuration : `main_schema` (default public) ? and `merge_validators`
-* What counts as a conflict? What is it checking pre merge?
+* What counts as a conflict? What is it checking pre merge? 
 
 
 # Installation
@@ -73,7 +77,7 @@ Use to make changes to the service network without interferring with it's integr
 <img width="888" height="141" alt="image" src="https://github.com/user-attachments/assets/9903defb-c774-4543-8d1a-a7fc7f7ace00" />
 
 
-# Test
+# Test screenshots
 Working in main branch, option to 'create a branch' : 
 <img width="904" height="622" alt="image" src="https://github.com/user-attachments/assets/4896ace8-0743-4d6d-a08c-a161c993dbef" />
 
