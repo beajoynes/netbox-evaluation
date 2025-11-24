@@ -1,3 +1,5 @@
+# Branching plugin - [Officicial NetBox branching docs](https://netboxlabs.com/docs/extensions/branching/) - [netbox-branching (github)](https://github.com/netboxlabs/netbox-branching)
+
 A netbox plugin that introduces branching functionality - this is now an 'official' NetBoxLabs plugin so it is owned and 
 supported fully by NetBox themselves.
 Allows for the creation of a discrete snapshot f the NetBox database which can be modified independently before later being
@@ -5,7 +7,7 @@ merged back into the `main` branch. Good practice is to lock the `main` branch s
 approval and reviewed before being added to thge main branch to avoid any incvorrect changes being made directly to the main 
 branch without interferring with it's integrity.
 Official NetBox documentation: https://netboxlabs.com/docs/extensions/branching/
-github page : https://github.com/netboxlabs/netbox-branching
+
 
 
 # Review 
