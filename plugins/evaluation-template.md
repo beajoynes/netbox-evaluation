@@ -1,4 +1,3 @@
-
 # Netbox Plugin - [netbox-floorplan-plugin](https://github.com/netbox-community/netbox-floorplan-plugin)
 
 ## Description	
@@ -7,7 +6,7 @@ A netbox plugin providing floorplan mapping capability for locations and sites.
 
 ## Use Case	
 
-* Site mapping, we currently use autocad to show where racks are installed inside a building.
+We currently use autocad for site mapping, to show where racks are installed inside a building.
 
 ## Compatible Version	
 
