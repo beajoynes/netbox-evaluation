@@ -12,8 +12,8 @@ merged back into the `main` branch.
 Use to make changes to the service network without interferring with it's integrity. The `main` branch can be locked and branches need to go through approval/review before being merged, reducing the chances of mistakes being made to the actual network.
 
 ## Requirements
-NetBox v4.3 or later
-PostgreSQL 12 or later
+* NetBox v4.3 or later
+* PostgreSQL 12 or later
 
 ## Official
 * Certified, owned and supported by NetBox Labs
