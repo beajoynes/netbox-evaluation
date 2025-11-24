@@ -9,8 +9,12 @@ docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netb
 * Has also worked with the branching plugin from netboxlabs
 
 NetBox installed to container (netbox-docker) by creating a custom docker image
-## DEmo with netbox-topology-plugin
-Here I have ran through the install of the topology views plugin, this is done from having no plugins installed. Once you have created the `plugins_requirements.txt`, `Dockerfile-plugins` and `docker-compose.override.yml` files, they can be reused for all plugins (just add other plugins below) and the latter two don't need reconfiguring for each plugin. For the majority, only the `plugins_requirements.txt` and `configuration/plugins.py` need to be modified with each plugin - though chekc carefully for each plugin exactly how to do this (e.g. plugins_requirements.txt used '-' but configuration/plugins.py uses '_'), and if any other files need to be modified.
+## Demo with netbox-topology-plugin
+Here I have ran through the install of the topology views plugin, this is done from having no plugins installed. 
+
+Once you have created the `plugins_requirements.txt`, `Dockerfile-plugins` and `docker-compose.override.yml` files, they can be reused for all plugins (just add other plugins below) and the latter two don't need reconfiguring for each plugin. 
+
+For the majority, only the `plugins_requirements.txt` and `configuration/plugins.py` need to be modified with each plugin - though check carefully for each plugin exactly how to do this (e.g. plugins_requirements.txt used '-' but configuration/plugins.py uses '_'), and if any other files need to be modified.
 
 ### Create and modify files in root folder 
 `plugins_requirements.txt`
