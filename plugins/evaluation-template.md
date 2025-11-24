@@ -60,14 +60,22 @@ A netbox plugin providing floorplan mapping capability for locations and sites.
   - A grid could be useful also?
 * Zoom
 * Floorplan with site with racks populated (Hemel Hempsted data centre)
-* - Adding racks appears as default in black (same as back ground) and cannot change rack colour - should be simple to code but currenty not great, though can just add 'area' behind.
+  - Adding racks appears as default in black (same as back ground) and cannot change rack colour - should be simple to code but currenty not great, though can just add 'area' behind.
   - Cannot change colour of text or how it is shown either.
   - Displays rack name vertically on saving
   - Also shows status horizontally in blue over the top - updated automatically if status is updated
 * In saved floorplan, clicking on a rack takes you to its page/details!
 * Not got any info on how to use on github repository, though it is mainly straight forward
 
+## Review
 
+* Currently floorplans are stored in DWG format but the 'public' format is PDF
+  - DWG files are binary files used for containing 2D and 3D design data (vector graphics), closely associated with CAD programs
+  - SVG is a popular tool for displaying 2d graphics, charts and illustrtations on websties. A vectror file, can be scaled up or down without losing any resolution.
+* Easy to edit when a change occurs (e.g rack added/removed)
+* Really like how the racks populated are there to add and status is automatically updated.
+* Clicking on a rack takes you to its page/details!
+  
 ## Next actions
 
 * Do we currently have floor plans of all sites? 
@@ -95,13 +103,3 @@ docker compose up -d
 ```
 
 <img width="989" height="717" alt="image" src="https://github.com/user-attachments/assets/6c5f8f75-4582-4537-b321-1c93bcdfca2f" />
-
-# Review
-
-# Use
-* Currently floorplans are stored in DWG format but the 'public' format is PDF
-* - DWG files are binary files used for containing 2D and 3D design data (vector graphics), closely associated with CAD programs
-  - SVG is a popular tool for displaying 2d graphics, charts and illustrtations on websties. A vectror file, can be scaled up or down without losing any resolution.
-* Easy to edit when a change occurs (e.g rack added/removed)
-* Really like how the racks populated are there to add and status is automatically updated.
-* clicking on a rack takes you to its page/details!
