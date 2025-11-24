@@ -52,6 +52,7 @@ services:
     image: netbox:latest-plugins
     pull_policy: never
 ```
+
 ### Enable plugin 
 `nano configuration/plugins.py`
 
@@ -81,6 +82,7 @@ Navigate to netbox UI and there is now a Topology Views tab in the menu.
 
 
 # Examples :
+https://netboxlabs.com/plugins/
 * **Validity** : Validity is the NetBox plugin to write "auto tests" for your network devices. You define compliance tests and Validity checks device state or configuration against these tests. Main use cases : configuration compliance and pre/post configuration checks.
 * **Documents** : Faciliate the storage of site, circuit, device type and device specific documents within NetBox
 * **Interface synchronisation** : Allows you to compare and synchronize interface names and types between devices and device types in NetBox. It can be useful for finding and correcting inconsistencies between interfaces when changing the device type.
@@ -92,6 +94,11 @@ Navigate to netbox UI and there is now a Topology Views tab in the menu.
 * **Data flows** : Document data flows between devices and applications.
 * **Branching** : Branching support to stage, review and collaborate on changes before applying them.
   
+## Levels
+There are 3 levesl to netbox plugins :
+* Official : Certified plugins that are fully supported and owned by NetBox, have documentation with NetBox
+* Certified : Plugins that meet criterea for quality, compatibility and ongoing maintenance - supported on NetBox Cloud and NetBox Enterprise
+* Compatible : Community developed plugins that have been validated on NetBox cloud and/or NetBox Enterprise
 
 
 # Capabilities
