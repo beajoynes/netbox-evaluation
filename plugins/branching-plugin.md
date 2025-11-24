@@ -32,11 +32,35 @@ branch without interferring with it's integrity.
     ]
   ```
 
+Menu view : 
+<img width="888" height="141" alt="image" src="https://github.com/user-attachments/assets/9903defb-c774-4543-8d1a-a7fc7f7ace00" />
+
+
 # Test
 Working in main branch, option to 'create a branch' : 
 <img width="904" height="622" alt="image" src="https://github.com/user-attachments/assets/4896ace8-0743-4d6d-a08c-a161c993dbef" />
 
 'Create a branch' page :
-<img width="903" height="792" alt="image" src="https://github.com/user-attachments/assets/f493c1d9-38ad-4105-bd9e-b96427fce76d" />
+<img width="904" height="786" alt="image" src="https://github.com/user-attachments/assets/24ecde5e-195d-4b89-9ff7-e23dfb489133" />
 
 
+Branch page (still 'working' in main branch) :
+<img width="900" height="826" alt="image" src="https://github.com/user-attachments/assets/281703d0-8812-4951-a9f7-51d84d47707f" />
+Branch has :  a unique Schema ID, status,(description), Owner, Last synced, Last activity
+
+May need to reload page to recognise new branch.
+
+Switch to new branch :
+<img width="901" height="913" alt="image" src="https://github.com/user-attachments/assets/3012840b-cd4f-49b9-812d-376e00b18785" />
+<img width="909" height="914" alt="image" src="https://github.com/user-attachments/assets/fbb6d3ad-0449-4afd-864c-ad82c7f19f2e" />
+
+Notification of branch being activated once switched
+> **Note:** Double (duplicated) pop up message of activation. Minor issue that does not affect use.
+
+Add in site, rack and device :
+<img width="900" height="640" alt="image" src="https://github.com/user-attachments/assets/b960fa7d-3375-4a44-89fb-7d21ef0b8c8e" />
+
+# Review / questions
+
+* What is 'sync' vs merge'? Sync seems to produce errors
+* How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
