@@ -7,6 +7,21 @@ branch without interferring with it's integrity.
 Official NetBox documentation: https://netboxlabs.com/docs/extensions/branching/
 github page : https://github.com/netboxlabs/netbox-branching
 
+
+# Review 
+* Very useful concept - definitely use this one
+* Can see when adn who merged a branch, changes made etc
+* Can restrict number of (working) branches that can exist simultaneously (default is no maximum)
+* Can activate and deactivate branches using REST API - it will be provisioned automatically (same as UI)
+
+
+ # Questions (and some answers)
+* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync??? It should mean changes to main branch are synced to current branch - SYNC WORKS FOR UNRELATED CHANGES ONLY!
+* How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
+* - In configuration : `main_schema` (default public) ? and `merge_validators`
+* What counts as a conflict? What is it checking pre merge?
+
+
 # Installation
 
 * In `plugin_requirements.txt`, the plugin is named `netboxlabs-netbox-branching`
@@ -81,20 +96,3 @@ Once merged, no longer have the option to swtich to the branch (or activate) :
 <img width="905" height="920" alt="image" src="https://github.com/user-attachments/assets/3a0f7123-0fea-4020-96e2-ac893f5b1bc0" />
 
 Branch status is now 'Merged'. 'Revert' option allows you to revert back to the state before the merge, main will go back to its pre-merge state and the branch will be reactivated.
-
-
-
-
-# Review 
-
-* Very useful concept - definitely use this one
-* Can see when adn who merged a branch, changes made etc
-* Can restrict number of (working) branches that can exist simultaneously (default is no maximum)
-* Can activate and deactivate branches using REST API - it will be provisioned automatically (same as UI)
-
-
- # Questions (and some answers)
-* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync??? It should mean changes to main branch are synced to current branch - SYNC WORKS FOR UNRELATED CHANGES ONLY!
-* How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
-* - In configuration : `main_schema` (default public) ? and `merge_validators`
-* What counts as a conflict? What is it checking pre merge?
