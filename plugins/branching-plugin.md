@@ -25,17 +25,20 @@ Use to make changes to the service network without interferring with it's integr
 
 * Bea 24-11-2025
 
-# Review 
-* Very useful concept - definitely use this one
-* Can see when adn who merged a branch, changes made etc
+## Evaluation comments
+* Can see when and who merged a branch, changes made etc
 * Can restrict number of (working) branches that can exist simultaneously (default is no maximum)
 * Can activate and deactivate branches using REST API - it will be provisioned automatically (same as UI)
 
+## Review 
+* Very useful concept - definitely can be used
 
- # Questions (and some answers)
-* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync??? It should mean changes to main branch are synced to current branch - SYNC WORKS FOR UNRELATED CHANGES ONLY!
+
+
+## Further actions (and some answers)
+* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync???   - Changes to main branch are synced to current branch - SYNC WORKS FOR UNRELATED CHANGES ONLY!
 * How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
-* - In configuration : `main_schema` (default public) ? and `merge_validators`
+- In configuration : `main_schema` (default public) ? and `merge_validators`
 * What counts as a conflict? What is it checking pre merge?
 
 
