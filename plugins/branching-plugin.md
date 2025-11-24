@@ -31,3 +31,12 @@ branch without interferring with it's integrity.
       'netbox_branching.database.BranchAwareRouter',
     ]
   ```
+
+# Test
+Working in main branch, option to 'create a branch' : 
+<img width="904" height="622" alt="image" src="https://github.com/user-attachments/assets/4896ace8-0743-4d6d-a08c-a161c993dbef" />
+
+'Create a branch' page :
+<img width="903" height="792" alt="image" src="https://github.com/user-attachments/assets/f493c1d9-38ad-4105-bd9e-b96427fce76d" />
+
+
