@@ -10,6 +10,9 @@ Netbox is a central nervous system or 'source of truth' for an entire network in
   
 https://github.com/netbox-community/netbox/blob/main/docs/media/misc/reference_architecture.png
 
+NetBox docs on Getting started and planning to use NetBox : https://netboxlabs.com/docs/netbox/getting-started/planning/
+
+
 DCIM : Data centre infrastructure management
 
 IPAM : IP address management
