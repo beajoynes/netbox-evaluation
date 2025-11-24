@@ -40,5 +40,7 @@ Unable to :
 * Modify core settings
 * Disable core components
 
+# Installation
+
 
 # Plugin backups ??
