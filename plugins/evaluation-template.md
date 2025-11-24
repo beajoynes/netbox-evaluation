@@ -3,15 +3,13 @@
 
 ## Description	
 
-A netbox plugin providing floorplan mapping capability for locations and sites
+A netbox plugin providing floorplan mapping capability for locations and sites.
 
 ## Use Case	
 
-
+* Site mapping, we currently use autocad to show where racks are installed inside a building.
 
 ## Compatible Version	
-
-Compatibility
 
 | NetBox Version	| Plugin Version |
 |----------------|----------------|
@@ -25,27 +23,17 @@ Compatibility
 
 ## Certified	
 
-* Certified ny Netbox Labs
+* Certified by Netbox Labs
+
 ## Test Priority	
 
 * High
+  
 ## Test Completed	
 
 * Bea 24-11-2025
+  
 ## Evaluation Comments
-
-* Do we currently have floor plans of all sites? 
-* Reach out to Baz Chandler/ Ade Prattley for more info.
-
-
-A netbox plugin providing floorplan mapping capability for locations and sites
-* https://github.com/netbox-community/netbox-floorplan-plugin
-
-Useful - currently we have floor plans of all sites? Baz Chandler/ Ade Prattley
-
-* Needs to be manually set up, but is it able to know what devices/racks and measurements from the site data?
-* Then the user just has to place it int he right place?
-
 
 * provides graphical ability to draw racks & unracked devices on a floorplan
 * support for metadata such as labels, areas, walls, coloring
@@ -53,16 +41,27 @@ Useful - currently we have floor plans of all sites? Baz Chandler/ Ade Prattley
 * keyboard controls supported
 * export to svg
 
-# Installation
+## Next actions
+
+* Do we currently have floor plans of all sites? 
+* Reach out to Baz Chandler/ Ade Prattley for more info.
+* Needs to be manually set up, but is it able to know what devices/racks and measurements from the site data?
+* Then the user just has to place it int he right place?
+
+## Installation
+
 In netbox-docker directory: 
+
 `nano plugin_requirements.txt.` add netbox-floorplan-plugin
 
 `nano configuration/plugins.py` :
+
 ```
 PLUGINS = ["netbox_floorplan"]
 ```
 
 ## Build and deploy
+
 ```
 docker compose build --no-cache
 docker compose up -d
