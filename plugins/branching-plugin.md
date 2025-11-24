@@ -72,7 +72,13 @@ If there are conflicts and you attempt a dry run  (added a site called Reading i
 <img width="894" height="334" alt="image" src="https://github.com/user-attachments/assets/95ee00f9-fa10-4cad-b46c-07217d483894" />
 
 Jobs tab of branch, Job 52 is the dry run of merging the branch successfully, 53 is the actual merge (commit changes checked).
-Branch status is now 'Merged'
+<img width="899" height="531" alt="image" src="https://github.com/user-attachments/assets/a565ce39-7604-4742-b777-7695784332d7" />
+
+
+Once merged, no longer have the option to swtich to the branch (or activate) : 
+<img width="905" height="920" alt="image" src="https://github.com/user-attachments/assets/3a0f7123-0fea-4020-96e2-ac893f5b1bc0" />
+
+Branch status is now 'Merged'.
 
 
 
