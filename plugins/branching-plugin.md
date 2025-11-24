@@ -51,16 +51,34 @@ Branch has :  a unique Schema ID, status,(description), Owner, Last synced, Last
 May need to reload page to recognise new branch.
 
 Switch to new branch :
-<img width="901" height="913" alt="image" src="https://github.com/user-attachments/assets/3012840b-cd4f-49b9-812d-376e00b18785" />
 <img width="909" height="914" alt="image" src="https://github.com/user-attachments/assets/fbb6d3ad-0449-4afd-864c-ad82c7f19f2e" />
 
 Notification of branch being activated once switched
 > **Note:** Double (duplicated) pop up message of activation. Minor issue that does not affect use.
 
 Add in site, rack and device :
-<img width="900" height="640" alt="image" src="https://github.com/user-attachments/assets/b960fa7d-3375-4a44-89fb-7d21ef0b8c8e" />
+<img width="889" height="913" alt="image" src="https://github.com/user-attachments/assets/a74fcdde-79e8-497c-9645-d8bd6097ed12" />
+Created as normal, just ensure you are in the correct branch (top right corner).
+
+
+Navigate to branches tab from menu, click on branch :
+<img width="901" height="910" alt="image" src="https://github.com/user-attachments/assets/05d9244e-5a98-4f28-a837-a1fc32467962" />
+Updated with sync, activity, and changes (compared to main).
+
+Merge allows for dry run and checks for conflict changes : 
+<img width="909" height="390" alt="image" src="https://github.com/user-attachments/assets/ae67dbf3-e05b-4b10-98fa-b1a328081fd2" />
+
+If there are conflicts and you attempt a dry run  (added a site called Reading in main branch) :
+<img width="894" height="334" alt="image" src="https://github.com/user-attachments/assets/95ee00f9-fa10-4cad-b46c-07217d483894" />
+
+Jobs tab of branch, Job 52 is the dry run of merging the branch successfully, 53 is the actual merge (commit changes checked).
+Branch status is now 'Merged'
+
+
+
 
 # Review / questions
 
-* What is 'sync' vs merge'? Sync seems to produce errors
+* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync???
 * How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
+* What counts as a conflict? What is it checking pre merge?
