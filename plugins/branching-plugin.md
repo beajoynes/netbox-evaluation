@@ -4,6 +4,8 @@ Allows for the creation of a discrete snapshot f the NetBox database which can b
 merged back into the `main` branch. Good practice is to lock the `main` branch so everyone wokrs on branches that need 
 approval and reviewed before being added to thge main branch to avoid any incvorrect changes being made directly to the main 
 branch without interferring with it's integrity.
+Official NetBox documentation: https://netboxlabs.com/docs/extensions/branching/
+github page : https://github.com/netboxlabs/netbox-branching
 
 # Installation
 
@@ -78,13 +80,21 @@ Jobs tab of branch, Job 52 is the dry run of merging the branch successfully, 53
 Once merged, no longer have the option to swtich to the branch (or activate) : 
 <img width="905" height="920" alt="image" src="https://github.com/user-attachments/assets/3a0f7123-0fea-4020-96e2-ac893f5b1bc0" />
 
-Branch status is now 'Merged'.
+Branch status is now 'Merged'. 'Revert' option allows you to revert back to the state before the merge, main will go back to its pre-merge state and the branch will be reactivated.
 
 
 
 
-# Review / questions
+# Review 
 
-* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync???
+* Very useful concept - definitely use this one
+* Can see when adn who merged a branch, changes made etc
+* Can restrict number of (working) branches that can exist simultaneously (default is no maximum)
+* Can activate and deactivate branches using REST API - it will be provisioned automatically (same as UI)
+
+
+ # Questions (and some answers)
+* What is 'sync' vs merge'? Sync seems to produce errors if main branch changed, nut in the error it suggests to sync??? It should mean changes to main branch are synced to current branch - SYNC WORKS FOR UNRELATED CHANGES ONLY!
 * How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
+* - In configuration : `main_schema` (default public) ? and `merge_validators`
 * What counts as a conflict? What is it checking pre merge?
