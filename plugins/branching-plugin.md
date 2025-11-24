@@ -1,14 +1,29 @@
-# Branching plugin - [Officicial NetBox branching docs](https://netboxlabs.com/docs/extensions/branching/) - [netbox-branching (github)](https://github.com/netboxlabs/netbox-branching)
+# Branching plugin - [netbox-branching](https://github.com/netboxlabs/netbox-branching)
 
+[Officicial NetBox branching docs](https://netboxlabs.com/docs/extensions/branching/) 
+
+## Description
 A netbox plugin that introduces branching functionality - this is now an 'official' NetBoxLabs plugin so it is owned and 
 supported fully by NetBox themselves.
 Allows for the creation of a discrete snapshot f the NetBox database which can be modified independently before later being
-merged back into the `main` branch. Good practice is to lock the `main` branch so everyone wokrs on branches that need 
-approval and reviewed before being added to thge main branch to avoid any incvorrect changes being made directly to the main 
-branch without interferring with it's integrity.
-Official NetBox documentation: https://netboxlabs.com/docs/extensions/branching/
+merged back into the `main` branch. 
+ 
+## Use case
+Use to make changes to the service network without interferring with it's integrity. The `main` branch can be locked and branches need to go through approval/review before being merged, reducing the chances of mistakes being made to the actual network.
 
+## Requirements
+NetBox v4.3 or later
+PostgreSQL 12 or later
 
+## Official
+* Certified, owned and supported by NetBox Labs
+
+## Test priority 
+* High
+
+## Test Completed	
+
+* Bea 24-11-2025
 
 # Review 
 * Very useful concept - definitely use this one
@@ -51,7 +66,7 @@ Official NetBox documentation: https://netboxlabs.com/docs/extensions/branching/
     ]
   ```
 
-Menu view : 
+### Menu view : 
 <img width="888" height="141" alt="image" src="https://github.com/user-attachments/assets/9903defb-c774-4543-8d1a-a7fc7f7ace00" />
 
 
