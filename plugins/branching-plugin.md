@@ -9,7 +9,7 @@ Allows for the creation of a discrete snapshot f the NetBox database which can b
 merged back into the `main` branch. 
  
 ## Use case
-Use to make changes to the service network without interferring with it's integrity. The `main` branch can be locked and branches need to go through approval/review before being merged, reducing the chances of mistakes being made to the actual network.
+Use to make changes to the service network without interferring with it's integrity. The `main` branch can be locked and branches need to go through approval/review before being merged, reducing the chances of mistakes being made to the actual network. This may only be possible when combined with the change management plugin, which is not included in thew community edition we are currently testing. 
 
 ## Requirements
 * NetBox v4.3 or later
@@ -43,6 +43,7 @@ Use to make changes to the service network without interferring with it's integr
 
 * How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
 - In configuration : `main_schema` (default public) ? and `merge_validators`
+- Change management plugin (available only with enterprise and cloud editions)
 * What counts as a conflict? What is it checking pre merge? 
 
 
