@@ -1,4 +1,4 @@
-# Netbox Plugin - [netbox-floorplan-plugin](https://github.com/netbox-community/netbox-floorplan-plugin)
+# Netbox documents plugin - [netbox-documents](https://github.com/jasonyates/netbox-documents)
 
 ## Description	
 
