@@ -1,3 +1,7 @@
+# [netbox-inventory](https://github.com/ArnesSI/netbox-inventory?tab=readme-ov-file)
+
+## Description
+
 Manage hardware inventory, both installed and in storage. Define assets that represent hardware that can be used as devices, modules, inventory item or rack in NetBox.  
 
 <img width="1641" height="1201" alt="image" src="https://github.com/user-attachments/assets/f189fbc6-d3fd-4acb-a16d-43eac49b7e93" />
