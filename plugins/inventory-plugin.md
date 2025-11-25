@@ -37,7 +37,7 @@ This plugin requires netbox version 4.3 to work. Older versions of the plugin su
 * Bea 24-11-2025
 
 ## Evaluation comments 
-
+* Many customisable settings available (In `configuration/plugins.py` add to `PLUGINS_CONFIG`) 
 ### Asset management
 * Inventory items have types (similar to device/module types - need manufacturer and model) and groups (e.g. pluggables). Groups can be nested (e.g. pluggables with child groups for SFP+ modules, SFP28 modules e.t.c). Group detail view gives you an overview of the number of contained assets broken down by asset status or inventory item types.
 * Asset status's : Stored, Used, Retired
@@ -47,11 +47,20 @@ This plugin requires netbox version 4.3 to work. Older versions of the plugin su
 ### Deliveries
 * Information about Suppliers, Purchases and Deliveries
 ### Audit
-* Audit flows
-* Audit trails
+* Audit flow pages : Assigned to an object type (DCIM, circuits, IPAM, inventory, ...)
+* Audit flows : group multiple audit flow pages into a single flow, initiated from a location type object (Location, Site or rack) this will display all audit flow pages and their defined NetBox objects for the location.
+* Audit trails : Document when an object has been verified to be in the specified location, can be created directly when running an audit flow or imported from other systems using the API or import form 
+* Audit trail sources : Optional functionality to identify the source of an audit trail (only when importing via API or import form)
+* Audit reports not currently included, though you can use a custom script to evaluate and aggregate data for different use cases
 
 
 ## Review 
+* Seems like it would be useful
+* Would want to go through it with Steve /someone who knows what we are looking for as part of inventory and sudit
+
+## Further actions / Questions
+* Go through with someone with more specific use case / current inventory needs knowledge
+* What is 
 
 # Installation
  
