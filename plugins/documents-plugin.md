@@ -30,8 +30,17 @@ Documents can be stored against many object types, with a wide range of file typ
   
 ## Test Completed	
 
+25.11.25
+
+## Evaluation
+
+* Document has a name, file, document type, site and comments
+* Document types : Network diagram, Floorplan, Purchase order, Quote, Wireless model (Ekahau), other
+* 
+
 ## Review
 * Is the attatchments plugin better for our use? - Allows attatchment of files to any object (including plugins, for example) but less information is given in it's github page (i.e. file types etc)
+
 
 ## Installation
 
