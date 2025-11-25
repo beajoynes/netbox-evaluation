@@ -152,7 +152,7 @@ PLUGINS_CONFIG = {
  }
 ```
 
-### Build and start 
+### Build and deploy 
 ```
 docker compose build --no-cache
 docker compose up -d
@@ -160,12 +160,6 @@ docker compose up -d
 
 Navigate to netbox UI and there is now a Topology Views tab in the menu.
 
-## Build and deploy
-
-```
-docker compose build --no-cache
-docker compose up -d
-```
 
 ## Screenshots
 
