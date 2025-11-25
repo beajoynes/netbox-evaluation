@@ -4,8 +4,26 @@
 
 Manage hardware inventory, both installed and in storage. Define assets that represent hardware that can be used as devices, modules, inventory item or rack in NetBox.  
 
+
+## Plugin data model :
 <img width="1641" height="1201" alt="image" src="https://github.com/user-attachments/assets/f189fbc6-d3fd-4acb-a16d-43eac49b7e93" />
 
+## Use case
+We have assets in storage - including spares and repairs, that need to be catalogued and kept track of. 
+
+## Compatability
+
+This plugin requires netbox version 4.3 to work. Older versions of the plugin support older netbox version as per table below:
+
+NetBox Version	Plugin Version
+3.7	1.6.x
+4.0	2.0.x
+4.1	2.1.x,2.2.x
+4.2	2.3.x
+4.3	2.4.0
+4.4	>=2.4.1
+
+## Review 
 
 # Installation
  
