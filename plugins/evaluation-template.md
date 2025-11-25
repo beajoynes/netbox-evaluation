@@ -83,7 +83,7 @@ We currently use autocad for site mapping, to show where racks are installed ins
 * Then the user just has to place it int he right place?
 
 
-# Installation
+## Installation
 
 Utilise plugins with netbox-docker created by users (within the Netbox Community*) on github by creating a custom 
 docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins.
@@ -91,7 +91,7 @@ docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netb
 * Has also worked with the branching plugin from netboxlabs
 
 NetBox installed to container (netbox-docker) by creating a custom docker image
-## Demo with netbox-topology-plugin
+# Demo with netbox-topology-plugin
 Here I have ran through the install of the topology views plugin, this is done from having no plugins installed. 
 
 Once you have created the `plugins_requirements.txt`, `Dockerfile-plugins` and `docker-compose.override.yml` files, they can be reused for all plugins (just add other plugins as required) and the latter two don't need reconfiguring for each plugin at all. 
