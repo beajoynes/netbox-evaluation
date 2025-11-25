@@ -10,6 +10,7 @@ Topology views of our network are very useful, can be generated for the whole ne
 
 ## Compatibility
 | netbox version | netbox-topology-views version |
+|-----|-----|
 | 4.4.X	| v4.4.0 |
 | 4.3.X	| v4.3.0 |
 | 4.2.1	| v4.2.1
