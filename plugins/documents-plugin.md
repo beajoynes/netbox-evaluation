@@ -2,11 +2,10 @@
 
 ## Description	
 
-A netbox plugin providing floorplan mapping capability for locations and sites.
+A netbox plugin for modelling and managing documents related to the 'out of the box' objects in NetBox.
 
 ## Use Case	
-
-We currently use autocad for site mapping, to show where racks are installed inside a building.
+Documents can be stored against many object types, with a wide range of file types supported (notably : png, jpeg, pdf, doc(x),txt) .  
 
 ## Compatible Version	
 
@@ -28,6 +27,9 @@ We currently use autocad for site mapping, to show where racks are installed ins
 * High
   
 ## Test Completed	
+
+## Review
+* Is the attatchments plugin better for our use? - Allows attatchment of files to any object (including plugins, for example) but less information is given in it's github page (i.e. file types etc)
 
 ## Installation
 
