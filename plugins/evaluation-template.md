@@ -83,7 +83,7 @@ We currently use autocad for site mapping, to show where racks are installed ins
 * Then the user just has to place it int he right place?
 
 
-## Installation
+# Installation
 
 Utilise plugins with netbox-docker created by users (within the Netbox Community*) on github by creating a custom 
 docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins.
