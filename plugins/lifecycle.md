@@ -33,7 +33,7 @@ We have many assets that need to be tracked.
 * Bea 25-11-2025
   
 ## Evaluation Comments
-
+* The repository/ github page itself has limited information, though I belive the use is fairly straight forward
 ### Hardware lifecycle
 * Assign a hardware lifecycle to device type or module type
 * Fill out key dates (end of sale, end of support, etc)
