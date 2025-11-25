@@ -39,11 +39,11 @@ Use to make changes to the service network without interferring with it's integr
 * Clear details
 
 
-## Further actions (and some answers)
+## Further actions 
 
 * How do I 'lock' the main branch, and allocate permissions/ levels of approval to branch merging?
- - In configuration : `main_schema` (default public) ? and `merge_validators`
- - Change management plugin (available only with enterprise and cloud editions)
+* - In configuration : `main_schema` (default public) ? and `merge_validators`
+  - Change management plugin (available only with enterprise and cloud editions)
 * What counts as a conflict? What is it checking pre merge? 
 
 
