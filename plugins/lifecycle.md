@@ -52,7 +52,6 @@ We have many assets that need to be tracked.
 Utilise plugins with netbox-docker created by users (within the Netbox Community*) on github by creating a custom 
 docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins.
 
-* Has also worked with the branching plugin from netboxlabs
 
 NetBox installed to container (netbox-docker) by creating a custom docker image
 
