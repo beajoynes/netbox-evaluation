@@ -82,17 +82,83 @@ We currently use autocad for site mapping, to show where racks are installed ins
 * Needs to be manually set up, but is it able to know what devices/racks and measurements from the site data?
 * Then the user just has to place it int he right place?
 
+
 ## Installation
 
-In netbox-docker directory: 
+Utilise plugins with netbox-docker created by users (within the Netbox Community*) on github by creating a custom 
+docker image : https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins.
 
-`nano plugin_requirements.txt.` add netbox-floorplan-plugin
+* Has also worked with the branching plugin from netboxlabs
 
-`nano configuration/plugins.py` :
+NetBox installed to container (netbox-docker) by creating a custom docker image
+## Demo with netbox-topology-plugin
+Here I have ran through the install of the topology views plugin, this is done from having no plugins installed. 
 
+Once you have created the `plugins_requirements.txt`, `Dockerfile-plugins` and `docker-compose.override.yml` files, they can be reused for all plugins (just add other plugins as required) and the latter two don't need reconfiguring for each plugin at all. 
+
+For the majority, only the `plugins_requirements.txt` and `configuration/plugins.py` need to be modified with each plugin - though check carefully for each plugin exactly how to do this (e.g. plugins_requirements.txt used '-' but configuration/plugins.py uses '_'), and if any other files need to be modified.
+
+### Create and modify files in root folder 
+`plugins_requirements.txt`
+*  Add plugin `netbox-topology-views`
+
+`Dockerfile-plugins`
+
+* Dockerfile used to build custom image with plugin - copy in the following.
 ```
-PLUGINS = ["netbox_floorplan"]
+FROM netboxcommunity/netbox:latest
+
+COPY ./plugin_requirements.txt /opt/netbox/
+RUN /usr/local/bin/uv pip install -r /opt/netbox/plugin_requirements.txt
+
+# These lines are only required if your plugin has its own static files.
+COPY configuration/configuration.py /etc/netbox/config/configuration.py
+COPY configuration/plugins.py /etc/netbox/config/plugins.py
+RUN DEBUG="true" SECRET_KEY="dummydummydummydummydummydummydummydummydummydummy" \
+    /opt/netbox/venv/bin/python /opt/netbox/netbox/manage.py collectstatic --no-input
 ```
+
+`docker-compose.override.yml`  (already there in netbox docker)
+* Ensure the following is added :
+```
+services:
+  netbox:
+    image: netbox:latest-plugins
+    pull_policy: never
+    ports:
+      - "8000:8080"
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
+  netbox-worker:
+    image: netbox:latest-plugins
+    pull_policy: never
+```
+
+### Enable plugin 
+`nano configuration/plugins.py`
+
+Add `PLUGINS = ["netbox_topology_views"]`
+
+Can add plugin configs here also using `PLUGINS_CONFIG`.
+
+The following allows for fixed and saved coordinates making layouts much nicer and easier to manipulate topology clearly.
+```
+PLUGINS_CONFIG = {
+   "netbox_topology_views": {
+        'allow_coordinates_saving': True,
+        'always_save_coordinates': True
+   }
+ }
+```
+
+### Build and start 
+```
+docker compose build --no-cache
+docker compose up -d
+```
+
+Navigate to netbox UI and there is now a Topology Views tab in the menu.
 
 ## Build and deploy
 
