@@ -1,7 +1,57 @@
-# netbox-topology-views 
+# Topology views plugin [netbox-topology-views](https://github.com/netbox-community/netbox-topology-views)
+
+## Description
 
 Netbox plugin to create topology views/maps from your devices in Netbox. The connections based on the cables created in Netbox.
-* https://github.com/netbox-community/netbox-topology-views
+
+## Use case
+
+Topology views of our network are very useful, can be generated for the whole network but also just sections/ schemes/ sites.
+
+## Compatibility
+| netbox version | netbox-topology-views version |
+| 4.4.X	| v4.4.0 |
+| 4.3.X	| v4.3.0 |
+| 4.2.1	| v4.2.1
+| 4.2.0 | v4.2.0 |
+| 4.1.X	| v4.1.0 |
+| 4.0.X	| v4.0.0 |
+| 3.7.0	| v3.9.0 |
+| 3.6.4	| v3.8.1 |
+| 3.6.0	| v3.7.0 |
+| 3.5.0	| v3.6.2 |
+
+
+## Review
+
+* Don't understand the filtering system, find it a bit rocky to use the plugin
+<mark> Likely due to my incompetence in the area. Still able to get the basics of physical cable connections. </mark>
+* I reckon the display could be better :
+  - Clearer icons
+  - Add icons for WAN routers,  vspheres
+<mark> Can use custom images/icons. </mark>
+  - Maybe have names with icons
+<mark> Toggle 'Node Label items'. Currently using Device type and site. </mark>
+  - Within rack display could be better
+ * Can download PNG/XML of topology - SVG??
+ * Can rearrange by dragging - though they don't alweays stay where you want, very 'floaty'
+<mark> Fixed by adjusting plugin configurations (in plugins.py) to allow coordinate saving. </mark>
+ * can group by sites and racks as well as filter
+ * Could create a filtering system for images/icons by name? or order them alphabetically
+ * Could add the ability to add labels for cables for lengths etc?
+ * Could add the ability to rename topology file before download? With default as the name of the saved filter?
+ * Image resolution on download??
+ * Save image as SVG not just PNG/XML?
+ * Can't click node to navigate to device page? <mark> DOUBLE CLICK!! </mark>
+* Can add current schematics as files to site (e.t.c)?
+
+
+## Further exploration 
+* Creating/saving coordinate groups
+* Saved filters disappear with database restore
+* Plugin backups
+* How to save views? Will it stay set once it is originally set ?
+* Create topology then save and add as file to site (e.t.c)? Or can it auto link to topology views page
 
 # Install
 * https://github.com/netbox-community/netbox-docker/wiki/Using-Netbox-Plugins
@@ -74,7 +124,10 @@ Navigate to netbox UI and there is now a Topology Views tab in the menu.
 ### Success with Telent mini data
 Using the plugin configurations to allow for coordinate saving, it is possible to rearrange map data into a fixed pattern to make diagrams clear and organised.
 
+### Screenshots
+
 For example a section of MMLite : 
+
 <img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/562e158d-4fa2-4f4e-ad45-336e0d5b3b3f" />
 
 <img width="1504" height="639" alt="image" src="https://github.com/user-attachments/assets/1516e8bd-ebf5-4841-8728-46aa60ca9cdf" />
@@ -83,6 +136,7 @@ For example a section of MMLite :
 <img width="1520" height="664" alt="topology" src="https://github.com/user-attachments/assets/c5b89135-fde2-4d26-ae2b-6b72079564fe" />
 
 ALMY MTS:
+
 <img width="626" height="637" alt="image" src="https://github.com/user-attachments/assets/f1ca9eb3-6bfe-41f6-9960-8e5ae8e6134b" />
 
 
@@ -107,45 +161,9 @@ Don't need to restart containers, just refresh web page.
 
 <img width="1486" height="578" alt="image" src="https://github.com/user-attachments/assets/a2be7408-6bdf-4686-a764-18a3878c2c00" />
 
-
 ## Backups
 ### Backup custom images/icons 
 Create archive, similar to media back up, but for (custom) image directory
 
 ### Backup saved filters
 ??? Anything else ???
-
-# Review
-
-* Don't understand the filtering system, find it a bit rocky to use the plugin
-<mark> Likely due to my incompetence in the area. Still able to get the basics of physical cable connections. </mark>
-* I reckon the display could be better :
-  - Clearer icons
-  - Add icons for WAN routers,  vspheres
-<mark> Can use custom images/icons. </mark>
-  - Maybe have names with icons
-<mark> Toggle 'Node Label items'. Currently using Device type and site. </mark>
-  - Within rack display could be better
- * Can download PNG/XML of topology - SVG??
- * Can rearrange by dragging - though they don't alweays stay where you want, very 'floaty'
-<mark> Fixed by adjusting plugin configurations (in plugins.py) to allow coordinate saving. </mark>
- * can group by sites and racks as well as filter
- * Could create a filtering system for images/icons by name? or order them alphabetically
- * Could add the ability to add labels for cables for lengths etc?
- * Could add the ability to rename topology file before download? With default as the name of the saved filter?
- * Image resolution on download??
- * Save image as SVG not just PNG/XML?
- * Can't click node to navigate to device page? <mark> DOUBLE CLICK!! </mark>
-* Can add current schematics as files to site (e.t.c)?
-
-
-# Further exploration ?
-* Add custom icons/images
-* Simplicity of creating 'straight line' topology
-* Creating coordinate groups
-* Saved filters disappear with database restore
-* Want to add more data to understand/ explore better
-* Plugin backups
-* How to save views? Will it stay set once it is originally set ?
-* Create topology then save and add as file to site (e.t.c)? Or can it auto link to topology views page
-
