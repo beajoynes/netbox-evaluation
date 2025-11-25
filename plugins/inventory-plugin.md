@@ -9,9 +9,9 @@ Manage hardware inventory, both installed and in storage. Define assets that rep
 <img width="1641" height="1201" alt="image" src="https://github.com/user-attachments/assets/f189fbc6-d3fd-4acb-a16d-43eac49b7e93" />
 
 ## Use case
-We have assets in storage - including spares and repairs, that need to be catalogued and kept track of. 
+We have assets in storage - including spares and repairs, that need to be catalogued and kept track of. Useful for audits.
 
-## Compatability
+## Compatibility
 
 This plugin requires netbox version 4.3 to work. Older versions of the plugin support older netbox version as per table below:
 
@@ -23,6 +23,33 @@ This plugin requires netbox version 4.3 to work. Older versions of the plugin su
 | 4.2	| 2.3.x |
 | 4.3	| 2.4.0 |
 | 4.4	| >=2.4.1 |
+
+## Certified	
+
+* Compatible
+
+## Test Priority	
+
+* High
+  
+## Test Completed	
+
+* Bea 24-11-2025
+
+## Evaluation comments 
+
+### Asset management
+* Inventory items have types (similar to device/module types - need manufacturer and model) and groups (e.g. pluggables). Groups can be nested (e.g. pluggables with child groups for SFP+ modules, SFP28 modules e.t.c). Group detail view gives you an overview of the number of contained assets broken down by asset status or inventory item types.
+* Asset status's : Stored, Used, Retired
+* Includes Device, Module, Inventory item and rack types as options for assets
+* Detailed information can be given, including Hardware and purchase details
+* Can automatically update assest status for when an asset is removed from device, module or inventory item (from used to stored)
+### Deliveries
+* Information about Suppliers, Purchases and Deliveries
+### Audit
+* Audit flows
+* Audit trails
+
 
 ## Review 
 
