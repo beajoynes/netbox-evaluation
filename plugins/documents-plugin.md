@@ -34,7 +34,7 @@ Documents can be stored against many object types, with a wide range of file typ
 
 ## Evaluation
 
-* Document has a name, file, document type, site and comments
+* Document has a name, file, document type and the object type it is assigned to (e.g. site, device, etc)
 * Document types : Network diagram, Floorplan, Purchase order, Quote, Wireless model (Ekahau), other
 * 
 
