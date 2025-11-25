@@ -1,3 +1,36 @@
+# Netbox Plugin - [netbox-floorplan-plugin](https://github.com/netbox-community/netbox-floorplan-plugin)
+
+## Description	
+
+A netbox plugin providing floorplan mapping capability for locations and sites.
+
+## Use Case	
+
+We currently use autocad for site mapping, to show where racks are installed inside a building.
+
+## Compatible Version	
+
+| NetBox Version	| Plugin Version |
+|----------------|----------------|
+| 4.3+	| 0.7.4 |
+| 4.2+	| 0.7.2 |
+| 4.0 - 4.2 | 0.7.0 |
+| 3.6+ | 0.6.4 |
+| 3.5.x	| 0.6.0 |
+| 3.3.x - 3.4.x	| 0.5.1 |
+
+## Certified	
+
+* Compatible
+
+## Test Priority	
+
+* High
+  
+## Test Completed	
+
+## Installation
+
 Optional plugin configs (`congifuration/plugins.py`)
 
 ```
