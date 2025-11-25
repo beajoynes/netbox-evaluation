@@ -34,7 +34,14 @@ We have many assets that need to be tracked.
   
 ## Evaluation Comments
 
-*
+### Hardware lifecycle
+* Assign a hardware lifecycle to device type or module type
+* Fill out key dates (end of sale, end of support, etc)
+### Support contracts
+* Need to have added a vendor, then a contract and then contract assignment
+* Support SKUs (stock keeping units?)
+### Licensing
+* Requires manufacturer
 
 ## Review
 
