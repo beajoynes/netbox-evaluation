@@ -1,5 +1,7 @@
 Questions to ask NetBox
 
+
+* NextBox UI Plugin - looks good but just not compatable atm, would Netbox take it on? : https://github.com/iDebugAll/nextbox-ui-plugin
 * Security
 * - Can you lock certain areas for certain people? I.e. minimise mistakes from accidental edits/ someone without the qualification editing wrong?
 * What if two people edit the same info at the same time? Test this?
@@ -20,7 +22,7 @@ Frontend?
 * Can it provide installation instructions?
 * Can it provide provisioning instructions?  -- Config diff ??
 * Can it auto provision?
-* Can it record passive information ? -- (site/rack/device ) status: Planned/retired/Staging/decomissioning and failed/inventory/offline - device specific, other options for racks also. Or Storage of devices? Plugin available to model these but has an invewntory option in status?
+* Can it record passive information ? -- (site/rack/device ) status: Planned/retired/Staging/decomissioning and failed/inventory/offline - device specific, other options for racks also. Or Storage of devices? Plugin available to model these but also has an inventory option in status?
 * Can it replace passive records? -- Again similar to above about what this refers to?
 * Can it produce As-Built drawings? -- real-world installation drawing of topology (?)
 * Can we report from it (Qlik)? -- need more info on this- meeting on Thursday includes Qlik
