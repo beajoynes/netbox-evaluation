@@ -93,7 +93,9 @@ https://netboxlabs.com/plugins/
 * **Lifecycle** : Hardware EOL/EOS, License and support contract tracking.
 * **Data flows** : Document data flows between devices and applications.
 * **Branching** : Branching support to stage, review and collaborate on changes before applying them.
-  
+* **Uncompatable - Nextbox UI** : Next Generation topology visualization plugin for NetBox
+
+
 ## Levels
 There are 3 levesl to netbox plugins :
 * Official : Certified plugins that are fully supported and owned by NetBox, have documentation with NetBox
