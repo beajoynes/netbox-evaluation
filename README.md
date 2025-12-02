@@ -15,6 +15,10 @@ DCIM : Data centre infrastructure management
 
 IPAM : IP address management
 
+
+Can change setting of changelog display - but can't filter through changelog so well.
+
+
 ## Features
 * Comprehensive data model
 * Focused development
