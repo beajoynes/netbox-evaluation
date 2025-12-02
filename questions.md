@@ -2,6 +2,9 @@ Questions to ask NetBox
 
 
 * NextBox UI Plugin - looks good but just not compatable atm, would Netbox take it on? : https://github.com/iDebugAll/nextbox-ui-plugin
+* Can you reference sites etc by ID in UI? or is that API only?
+
+
 * Security
 * - Can you lock certain areas for certain people? I.e. minimise mistakes from accidental edits/ someone without the qualification editing wrong?
 * What if two people edit the same info at the same time? Test this?
