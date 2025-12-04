@@ -47,4 +47,16 @@ Storing the netbox URL and API token as environment variables is a secure method
         state: present
 ```
 
-To run the playbook :  `
+To run the playbook :  `ansible-playbook basic_playbook.yml`
+
+Output : 
+```
+PLAY [Basic Playbook] **********************************************************************
+
+TASK [Create Manufacturer] *****************************************************************
+ok: [localhost]
+
+PLAY RECAP *********************************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+```
+As my database already has the Juniper manufacturer, no changes have been made but the playbook has ran successfully.
