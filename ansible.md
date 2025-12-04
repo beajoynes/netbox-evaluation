@@ -25,6 +25,8 @@ export NETBOX_TOKEN=6359cf4bd054e0a0c59fbedc316f938909b18260
 
 Storing the netbox URL and API token as environment variables is a secure method as you then don't have sensitive information in the playbooks themselves, they can be referenced using `"{{ lookup('env', 'NETBOX_API') }}"` and `"{{ lookup('env', 'NETBOX_TOKEN') }}"` respectively.
 
+Use `printenv | grep NETBOX` to check if the correct variables are stored.
+
 > [Ansible vault](https://docs.ansible.com/projects/ansible/latest/vault_guide/vault.html) can also be used to keep sensitive information hidden and secure. 
 
 ## Example : Basic playbook
