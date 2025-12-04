@@ -30,6 +30,7 @@ Storing the netbox URL and API token as environment variables is a secure method
 ## Example : Basic playbook
 `nano basic_playbook.yml`
 
+Creating a playbook (YAML file) to create two manufacturers, using the netbox.netbox_
 ```
 - name: "Basic Playbook"
   connection: local
@@ -38,25 +39,36 @@ Storing the netbox URL and API token as environment variables is a secure method
 
 
   tasks:
-    - name: Create Manufacturer
+    - name: Create Juniper Manufacturer
       netbox.netbox.netbox_manufacturer:
         netbox_url: "{{ lookup('env', 'NETBOX_API') }}"
         netbox_token: "{{ lookup('env', 'NETBOX_TOKEN') }}"
         data:
           name: Juniper
         state: present
+    - name: Create Disco Manufacturer
+      netbox.netbox.netbox_manufacturer:
+        netbox_url: "{{ lookup('env', 'NETBOX_API') }}"
+        netbox_token: "{{ lookup('env', 'NETBOX_TOKEN') }}"
+        data:
+          name: Disco
+        state: present
 ```
 
-To run the playbook :  `ansible-playbook basic_playbook.yml`
-
-Output : 
+I get the following output :
 ```
-PLAY [Basic Playbook] **********************************************************************
+PLAY [Basic Playbook] **********************************************************
 
-TASK [Create Manufacturer] *****************************************************************
+TASK [Create Juniper Manufacturer] *********************************************
 ok: [localhost]
 
-PLAY RECAP *********************************************************************************
-localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+TASK [Create Disco Manufacturer] ***********************************************
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
-As my database already has the Juniper manufacturer, no changes have been made but the playbook has ran successfully.
+
+It shows that both tasks were completed successfully, but only the second one changed anything - this is expected as Juniper already exists as a manufacturer while Disco is new and was added to the database.
+
+Navigating to `http://172.28.227.204:8000/dcim/manufacturers/` and I can see the Disco manufacturer is now there.
