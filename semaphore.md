@@ -1,4 +1,5 @@
 # SemaphoreUI
+Open source UI for ansible (and other similar applications).
 
 Schedule : Autyomatically create cron expression for running jobs 
 
@@ -9,3 +10,6 @@ Runner :
 ```
 /usr/local/bin/semaphore runner start --config /home/beajoynes/git/netbox-docker-plugins-8000/ansible/semaphoreui/config.runner.json
 ```
+
+## For prod
+Use AWX or Red Hat Automation Platform  ???
