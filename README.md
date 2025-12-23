@@ -59,6 +59,16 @@ NetBox docs on Getting started and planning to use NetBox : https://netboxlabs.c
 * Validate existing data
 * Order of operations (recommended) - self nesting models (e.g. Tenant Group, Region, Site Group, Location) can have a recursive hierarchy, for example a region representing both countries and cities with cities nested under countries.
 
+
+## Observability
+* Zabbix
+* Grafana
+
+## Automation
+* Ansible playbooks - idempotent
+* Python scripts
+
+
 ## Back ups
 * Important!
 * Backup to local machine
