@@ -1,0 +1,6 @@
+---
+- name: Backup AWX
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - backup
