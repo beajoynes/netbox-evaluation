@@ -16,6 +16,13 @@ Frontend?
 * Site packs - creation, sharing
 * idiot checks : flag up errors & rule creation?
 
+
+* Explore project management tools for netbox
+* - create and assign tasks or actions
+  - scheduling
+  - project reports - extract data from netbox to Qlik for reporting
+
+
 # Post NetBox Onsite
 
 ## What can we do with it?
