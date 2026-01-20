@@ -1,4 +1,4 @@
-Not included in community edition (enterprise and cloud only0 - NetBox told us on Friday (21st Nov) meeting we could get a trial /demo - then we can test this ?
+Not included in community edition (enterprise and cloud only) - NetBox told us on Friday (21st Nov) meeting we could get a trial /demo - then we can test this ?
 
 # [change-management](https://netboxlabs.com/docs/developer/plugins-extensions/changes/)
 * Extends branching
