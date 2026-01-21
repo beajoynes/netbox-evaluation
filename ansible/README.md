@@ -6,7 +6,7 @@
   - Netbox **lookup** https://docs.ansible.com/projects/ansible/latest/collections/netbox/netbox/nb_lookup_lookup.html
 * **Semaphore** ansible tasks docs https://docs.semaphoreui.com/user-guide/task-templates/apps/ansible/
 * Ansible cheat sheet https://www.geeksforgeeks.org/devops/ansible-cheat-sheet/
-* Event driven network automation, netbox ansible automation platform https://netboxlabs.com/blog/event-driven-network-automation-netbox-ansible-automation-platform/
+* Event driven network automation, netbox ansible automation platform https://netboxlabs.com/blog/event-driven-network-automation-netbox-ansible-automation-platform/ - [github](https://github.com/netboxlabs/netbox-learning/tree/develop/netbox-event-driven-architectures)
 
   
   
