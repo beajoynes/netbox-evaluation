@@ -1,0 +1,38 @@
+### Playbook that creates, updates the status and deletes a device, the changes can be seen in the changelog in NetBox
+---
+- name: Create, Update and Delete NetBox device
+  hosts: localhost
+  gather_facts: no
+
+  vars:
+    netbox_url: "http://172.28.227.204:8001"
+    netbox_token: "6359cf4bd054e0a0c59fbedc316f938909b18260"
+
+  tasks:
+    - name: Create device within NetBox with only required information
+      netbox.netbox.netbox_device:
+        netbox_url: "{{ netbox_url }}"
+        netbox_token: "{{ netbox_token }}"
+        data:
+          name: Test Device
+          device_type: juniper-mx480
+          device_role: mx480role
+          site: Bea
+        state: present
+
+    - name: Update device within NetBox
+      netbox.netbox.netbox_device:
+        netbox_url: "{{ netbox_url }}"
+        netbox_token: "{{ netbox_token }}"
+        data:
+          name: Test Device
+          status: Planned
+        state: present
+
+    - name: Delete device within NetBox
+      netbox.netbox.netbox_device:
+        netbox_url: "{{ netbox_url }}"
+        netbox_token: "{{ netbox_token }}"
+        data:
+          name: Test Device
+        state: absent
