@@ -1,4 +1,4 @@
-`ansible-builder build --container-runtime docker`
+`ansible-builder build -t ansible-netbox-ee --container-runtime docker`
 
 Default name : ansible-execution-env unless you use `-t my_ee_name`
 
