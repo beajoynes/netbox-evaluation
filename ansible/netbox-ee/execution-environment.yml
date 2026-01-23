@@ -1,0 +1,20 @@
+# A working definitiion file for a customised awx EE, run using `ansible-builder build --container-runtime docker` in project root
+version: 3
+
+images:
+  base_image:
+    name: 'quay.io/ansible/awx-ee:latest'
+
+dependencies:
+  ansible_core:
+    package_pip: ansible-core
+  ansible_runner:
+    package_pip: ansible-runner
+  galaxy: requirements.yml
+  python: requirements.txt
+
+additional_build_steps:
+  prepend_final: |
+    # Ensure compile tools available for final pip installs (ovirt-imageio)
+    RUN dnf install -y gcc python3-devel make libxml2-devel libcurl-devel
+    RUN dnf clean all && rm -rf /var/cache/dnf
