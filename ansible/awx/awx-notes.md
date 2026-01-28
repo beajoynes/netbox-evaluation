@@ -38,7 +38,7 @@ If you modify the inventory file in the linked Git repository:
 
 When creating a new job template in AWX:
 
-- **Name:** A descriptive title for easier identification.  
+- **Name:** A descriptive title for easier identification.  ALso can add a description for further information.
 - **Inventory:** Must correspond with the `hosts` value defined in your playbook.  
 - **Project:** Select the project linked to your repository.  
 - **Playbook:** Choose the specific YAML file path within that project.  
@@ -61,36 +61,3 @@ When creating a new job template in AWX:
 ---
 
 
-
-
-AWX process :
-1. Update repo linked to project (e.g. playbook)
-2. Sync project (this can be done automatically on each launch of a job by checking 'update revision on launch' when creating/editing project
-3. (Re) launch job from templates.
-Overall this process is quite slow and annoying for debugging and testing, though the automatic project sync is useful
-
-
-
-Update inventory source:
-If updating the inventory file in the linked github repo, make sure to sync the project in awx.
-Then sync the source.
-The hosts will be updated and any new ones will be added. Hosts that are already added to the inventory will remain even if the source no longer 
-references them, so if you change the name of a host in the inventory file a new host will appear in awx and the new one will still exist.
-
-
-
-
-Creating a new template :
-- Name
-- Inventory (ensure it matches with playbook 'hosts')
-- Project
-- Playbook (path copied from project github repo)
-- (optional) credentials iff needed - e.g. ssh
-Save & Launch
-
-
-ansible_user:
-- needs the permissions required for playbook
-- AWX pod has no access to user dir and no inherited environment variables because of container isolation of kubernetes cluster.
-- One workaround is to use /tmp directory as it is 'world writable', i.e. writable by any user
-- local connection method for hosts doesn't work because of this
