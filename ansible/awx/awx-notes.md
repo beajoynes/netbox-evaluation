@@ -66,6 +66,9 @@ When creating a new job template in AWX:
 * Idempotent
 * Plays - target different hosts with different users
 * Tasks - different jobs on the target hosts (within a play)
+* - When running ansible in terminal, can targets specific tasks using `--tags` or `--start-at-task`
+ 
+    
 EXAMPLE
 ```
 ---
