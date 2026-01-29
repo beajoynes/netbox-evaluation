@@ -102,3 +102,7 @@ EXAMPLE
       name: postgresql
       state: started
 ```
+
+## Connections 
+* local  - when using awx deployed in klubernetes pod, this doesn't work
+* ssh - need credentials added in awx
