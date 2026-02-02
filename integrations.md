@@ -19,7 +19,7 @@ Types of operation :
 * DEsktop app/ web UI for REST API requests. Allows for you to keep collections of requests to be bale to repeat and troubleshoot, creating body of requests and returning outputs in multiple formats (JSON, ...)
 
 
-> Example command to  `GET` (retrieve) all sites in database.
+**Example** command to  `GET` (retrieve) all sites in database.
 ```
 curl --location 'http://dockernetbox1.bounceme.net:8000/api/dcim/sites/?brief=True' --header 'Authorization: Tok
 en dcebd423e17942513f4d864f562b1f1fd123e02c'
