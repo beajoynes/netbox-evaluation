@@ -1,5 +1,8 @@
-# netbox-evaluation
+# Netbox Evaluation; Bea Joynes
 A repository to keep track of netbox learning, exploring and evaluation
+
+
+## About NetBox 
 
 Netbox community github : https://github.com/orgs/netbox-community/repositories?type=all
 
@@ -68,8 +71,8 @@ NetBox docs on Getting started and planning to use NetBox : https://netboxlabs.c
 * Grafana
 
 ## Automation
-* Ansible playbooks - idempotent
-* Python scripts
+* Ansible playbooks - idempotent, AWX as a UI
+* Python scripts, rest API
 
 
 ## Back ups
