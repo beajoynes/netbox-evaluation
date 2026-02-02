@@ -21,3 +21,25 @@ Until the applications are allowed on the Telent wifi the main work arounds are 
 :x: awx project sync  
 
 :x: awx job launch/run
+
+## CISCO umbrella 
+In **windows powershell** : `Get-Service | Where-Object { $_.DisplayName -like "*Cisco*" -or $_.Name -like "*Cisco*" }`
+
+Output should look like this (if umbrella is running) :
+```
+Status   Name               DisplayName
+------   ----               -----------
+Running  csc_swgagent       Cisco Secure Client - Umbrella SWG ...
+Running  csc_umbrellaagent  Cisco Secure Client - Umbrella Agent
+Running  csc_vpnagent       Cisco Secure Client - AnyConnect VP...
+```
+
+### **STOP** umbrella
+`Stop-Service -Name "csc_umbrellaagent"`
+```
+WARNING: Waiting for service 'Cisco Secure Client - Umbrella Agent (csc_umbrellaagent)' to stop...
+WARNING: Waiting for service 'Cisco Secure Client - Umbrella Agent (csc_umbrellaagent)' to stop...
+```
+
+### **START** umbrella 
+`Start-Service -Name "csc_umbrellaagent"`
