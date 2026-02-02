@@ -1,5 +1,5 @@
 ### Office wifi :office:
-:heavy_check_mark: Can run ansibvle playbooks locally
+:heavy_check_mark: Can run ansible playbooks locally
 
 :grey_question: Can I access netbox inventory ? 
 
