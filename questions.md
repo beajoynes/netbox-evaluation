@@ -17,6 +17,8 @@ Frontend?
 * idiot checks : flag up errors & rule creation?
 
 
+* Make 'select all' choice for object type in custom field
+
 * Explore project management tools for netbox
 * - create and assign tasks or actions
   - scheduling
