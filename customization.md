@@ -51,3 +51,9 @@ Fields (Bold = Required) :
 <img width="937" height="914" alt="image" src="https://github.com/user-attachments/assets/f7fb8642-cd6b-48c9-877d-b70144448271" />
 
 <img width="927" height="917" alt="image" src="https://github.com/user-attachments/assets/20f544a5-f0e9-4c77-8cbe-cb0af4b51631" />
+
+
+# Custom links
+Custom links allow users to display arbitrary hyperlinks to external content within NetBox object views. These are helpful for cross-referencing related records in systems outside NetBox. For example, you might create a custom link on the device view which links to the current device in a Network Monitoring System (NMS).
+
+Custom links are created by navigating to Customization > Custom Links. Each link is associated with a particular NetBox object type (site, device, prefix, etc.) and will be displayed on relevant views. Each link has display text and a URL, and data from the NetBox item being viewed can be included in the link using Jinja template code through the variable object, and custom fields through object.cf.
