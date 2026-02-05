@@ -26,10 +26,10 @@ It also requires a weight : higher weights will be ordered lower within a form (
 ## Adding a new custom field 
 
 Fields (Bold = Required) :
-* **Object types**
-* **Name** - DB friendly, alphanumeric and underscores
-* **Type**
-* Label
+* **Object types** (can choose as many as you like)
+* **Name** (DB friendly, alphanumeric and underscores)
+* **Type** (can't change after creation)
+* Label (user display, Name as default)
 * Group name
 * Description
 * (Check box) Required
