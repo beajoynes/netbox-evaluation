@@ -25,8 +25,8 @@ It also requires a weight : higher weights will be ordered lower within a form (
 
 ## Adding a new custom field 
 
-Fields :
-* **object types**
+Fields (Bold = Required) :
+* **Object types**
 * **Name** - DB friendly, alphanumeric and underscores
 * **Type**
 * Label
