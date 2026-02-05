@@ -57,3 +57,25 @@ Fields (Bold = Required) :
 Custom links allow users to display arbitrary hyperlinks to external content within NetBox object views. These are helpful for cross-referencing related records in systems outside NetBox. For example, you might create a custom link on the device view which links to the current device in a Network Monitoring System (NMS).
 
 Custom links are created by navigating to Customization > Custom Links. Each link is associated with a particular NetBox object type (site, device, prefix, etc.) and will be displayed on relevant views. Each link has display text and a URL, and data from the NetBox item being viewed can be included in the link using Jinja template code through the variable object, and custom fields through object.cf.
+
+
+# Tags
+Tags are user-defined labels which can be applied to a variety of objects within NetBox. They can be used to establish dimensions of organization beyond the relationships built into NetBox. For example, you might create a tag to identify a particular ownership or condition across several types of objects.
+
+## Fields
+### Name
+A unique human-friendly label for the tag.
+
+### Slug
+A unique URL-friendly identifier. (This value will be used for filtering.) This is automatically generated from the tag's name, but can be altered as needed.
+
+### Color
+The color to use when displaying the tag in the NetBox UI.
+
+### Weight
+A numeric weight employed to influence the ordering of tags. Tags with a lower weight will be listed before those with higher weights. Values must be within the range 0 to 32767.
+
+### Object Types
+The assignment of a tag may be limited to a prescribed set of objects. For example, it may be desirable to limit the application of a specific tag to only devices and virtual machines.
+
+If no object types are specified, the tag will be assignable to any type of object.
