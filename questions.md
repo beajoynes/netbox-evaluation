@@ -19,11 +19,15 @@ Frontend?
 
 * Make 'select all' choice for object type in custom field
 
+
+
 * Explore project management tools for netbox
 * - create and assign tasks or actions
   - scheduling
   - project reports - extract data from netbox to Qlik for reporting
 
+
+* Can objects inherit fields ? such as site status changing, updates the status of the devices in the site
 
 # Post NetBox Onsite
 
