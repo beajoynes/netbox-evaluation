@@ -1,6 +1,6 @@
 * Important to still find out the difference / similarities between infrastructure scenarios and connectivity solutions
 * What is alarm correlation and LOE exactly ?
-* Is it possible to customise status options????
+* Is it possible to customise status options???? https://github.com/netbox-community/netbox/blob/main/docs/configuration/data-validation.md#field_choices
   
 
 ### Best practices for import
