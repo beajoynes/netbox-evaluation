@@ -6,7 +6,8 @@
 * Add custom fields to netbox
 * Manually add region, site groups, 
 * Translate to Netbox friendly csv
-* upload into netbox 
+* Proof check for correct names!! ETC
+* Upload into netbox 
 * How is exported  ??? QLIK V CMDB
 
 ### Netbox
