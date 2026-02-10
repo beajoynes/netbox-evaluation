@@ -5,6 +5,7 @@
 
 ### Best practices for import
 * fresh netbox instance
+* Adjust configuration.py file as needed to change status field choices
 * Add custom fields to netbox
 * Manually add region, site groups, 
 * Translate to Netbox friendly csv
