@@ -1,5 +1,7 @@
 * Important to still find out the difference / similarities between infrastructure scenarios and connectivity solutions
 * What is alarm correlation and LOE exactly ?
+* Is it possible to customise status options????
+  
 
 ### Best practices for import
 * fresh netbox instance
@@ -15,6 +17,7 @@
 * Fresh instance for PTN?
 * Certain objects depend upon other objects existing : 
 * - Interfaces before connections
+  - Site, Device role, Device type before Device 
   - 
 
 
