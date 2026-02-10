@@ -1,3 +1,6 @@
+* Important to still find out the difference / similarities between infrastructure scenarios and connectivity solutions
+* What is alarm correlation and LOE exactly ?
+
 ### Best practices for import
 * fresh netbox instance
 * Add custom fields to netbox
@@ -34,7 +37,7 @@
 * Drawing number - is this linking to qlik or a drawing that can be attached?
 * - Relationship to document for equipment , mcy (map view)  or cpf (equipment itsllf) drawing, not used for correlation and possibley not for LOE
 * SW cluster??
-* - Software cluster : For resilience chassis > blade > VMs in cluster such that if one goes down another can take over, a way of recxording a logical  grouping  - not in active equpipment - in software
+* - Software cluster : For resilience chassis > blade > VMs in cluster such that if one goes down another can take over, a way of recording a logical  grouping  - not in active equpipment - in software
 * Stack name - stack device to look like (for example) one big switch from 4 ex4300 switches reporting as opne, individual chassis making , generally position 0 is master
 * PCX ? - only relevant for alcatel omnipcx equipment, sc11 ERTs
 * - Config number : stored in manager by allocation of shelf number - unique per domain, country split into 2 domains : c and d to provide resilience, z is for testing dummy info
