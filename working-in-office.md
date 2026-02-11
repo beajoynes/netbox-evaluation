@@ -2,7 +2,7 @@ When working in the office, some of the applications we have been looking at as 
 
 Until the applications are allowed on the Telent wifi the main work arounds are to connect to :
 - The point wifi (The building wifi, rather than Telent's wifi which is restricted)
-- Your phone's hotspot
+- Your (work) phone's hotspot
 
 
 ### Office wifi :office:
