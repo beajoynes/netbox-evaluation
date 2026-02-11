@@ -8,7 +8,7 @@ Netbox community github : https://github.com/orgs/netbox-community/repositories?
 
 Netbox is a central nervous system or 'source of truth' for an entire network infrastructure.
 * Central source of truth
-* Solution for modeling and documenting mnetwork infrastructure
+* Solution for modeling and documenting network infrastructure
 * Migrate from spreadsheets = fewer errors, ease of use
   
 <img width="948" height="570" alt="image" src="https://github.com/user-attachments/assets/35207439-f9fd-4f01-8ea8-de30b17da0be" />
