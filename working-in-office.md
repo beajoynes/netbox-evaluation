@@ -5,7 +5,7 @@ Until the applications are allowed on the Telent wifi the main work arounds are 
 - Your (work) phone's hotspot
 
 
-### Office wifi :office:  **T CORP**
+### Office wifi :office:  <mark> T CORP </mark>
 :heavy_check_mark: Can run ansible playbooks locally
 
 :grey_question: Can I access netbox inventory ? 
