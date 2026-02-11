@@ -1,7 +1,7 @@
 NetBox docker : https://github.com/netbox-community/netbox-docker
 
 ### Quickstart
-
+> **NOTE** : Use alternative wifi to T CORP if in office (E.g. The Point Guest)
 ```
 git clone -b release https://github.com/netbox-community/netbox-docker.git
 cd netbox-docker
@@ -19,6 +19,9 @@ docker compose pull
 docker compose up 
 ```
 Use `-d` after `docker compose up` to allow for detatched startup so containers are run in the background.
+
+> **NOTE** : After initial pull, using the office `T CORP` wifi should work fine for `docker compose up`
+
 
 ### Navigate to webpage
 
