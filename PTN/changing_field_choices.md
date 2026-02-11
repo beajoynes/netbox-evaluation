@@ -10,7 +10,9 @@ FIELD_CHOICES = {
     'dcim.Site.status': (
         ('decommissioned', 'Decommissioned', 'red'),
         ('in_service', 'In Service', 'green'),
-        ('commissioned', 'Commissioned', 'black'),
+        ('commissioned', 'Commissioned', 'yellow'),
     )
 }
 ```
+
+> **NOTE** : The first choice will be the default
