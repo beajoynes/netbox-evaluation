@@ -19,7 +19,7 @@
 * fresh netbox instance
 * Adjust configuration.py file as needed to change status field choices
 * Add custom fields to netbox
-* Manually add region, site groups, 
+* Manually add tenants, region, site groups, small objects
 * Translate to Netbox friendly csv
 * Proof check for correct names!! ETC
 * Upload into netbox 
