@@ -40,3 +40,21 @@ SPC E (MM Lite):SPC E (MM Lite)
 SPC F (E.g. A14):SPC F (E.g. A14)
 SPC ATMg:SPC ATMg
 ```
+
+### Custom fields
+* NL_UID  (NL UID), Text, Required, Unique
+* CW (CW), Carriageway, Selection, CW choice set
+* Hardshoulder, selection, Hardshoulder choice set
+* NRTS_ID (NRTS ID), Text
+* TAF (TAF), Text
+* SPC (SPC), Service Provisioning Capability
+* Span, Text, ^(?=.*\d.*\d.*\d).+$
+* Road, Location, Selection, Road choices
+* Marker_Post (Marker Post), Location, Decimal, 125 (Display weight)
+* MP_Offset (MP Offset), Location, Distance from marker post (0-100m), Integer, 0, 100, 150 (Display weight)
+
+### Manually add :
+* site groups : Roadside sites, Tx sites
+* tenants : NRTS, non NRTS
+* regions - exported csv of names and slugs from original DB
+* 
