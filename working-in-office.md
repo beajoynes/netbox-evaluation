@@ -22,6 +22,11 @@ Until the applications are allowed on the Telent wifi the main work arounds are 
 
 :x: awx job launch/run
 
+:heavy_check_mark: `docker compose up -d` to set up Netbox
+
+:heavy_check_mark: Use Netbox UI
+
+
 ## CISCO umbrella 
 In **windows powershell** : `Get-Service | Where-Object { $_.DisplayName -like "*Cisco*" -or $_.Name -like "*Cisco*" }`
 
