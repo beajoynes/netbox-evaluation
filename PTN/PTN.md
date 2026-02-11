@@ -1,7 +1,18 @@
 * Important to still find out the difference / similarities between infrastructure scenarios and connectivity solutions
 * What is alarm correlation and LOE exactly ?
 * Is it possible to customise status options???? https://github.com/netbox-community/netbox/blob/main/docs/configuration/data-validation.md#field_choices
-  
+
+
+### Issues with current PTN
+* Spreadsheet overload
+* Confusing
+* Different scenarios / connectivity solutions mixed
+* Hard to update
+* Need to use a different software to access drawings - No in built diagrams
+* Different / inconsistent naming conventions
+* Incomplete dataset
+* Fields / acronyms people don't know the meaning of! (E.g. TM requirement)
+
 
 ### Best practices for import
 * fresh netbox instance
