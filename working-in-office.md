@@ -22,6 +22,8 @@ Until the applications are allowed on the Telent wifi the main work arounds are 
 
 :x: awx job launch/run
 
+:x: `git clone` - Need to use The Point Guest wifi
+
 :heavy_check_mark: `docker compose up -d` to set up Netbox
 
 :heavy_check_mark: Use Netbox UI
