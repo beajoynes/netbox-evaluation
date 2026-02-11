@@ -9,7 +9,7 @@
 * Different scenarios / connectivity solutions mixed
 * Hard to update
 * Need to use a different software to access drawings - No in built diagrams
-* Different / inconsistent naming conventions
+* Different / inconsistent naming conventions - e.g spans ahhh
 * Incomplete dataset
 * Fields / acronyms people don't know the meaning of! (E.g. TM requirement)
 * No population model document for NRTS 2 (There was for NRTS 1)
