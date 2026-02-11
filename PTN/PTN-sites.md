@@ -47,7 +47,7 @@ SPC ATMg:SPC ATMg
 * Hardshoulder, selection, Hardshoulder choice set
 * NRTS_ID (NRTS ID), Text
 * TAF (TAF), Text
-* SPC (SPC), Service Provisioning Capability
+* SPC (SPC), Service Provisioning Capability, SPC choices
 * Span, Text, ^(?=.*\d.*\d.*\d).+$
 * Road, Location, Selection, Road choices
 * Marker_Post (Marker Post), Location, Decimal, 125 (Display weight)
