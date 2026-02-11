@@ -24,9 +24,9 @@ Until the applications are allowed on the Telent wifi the main work arounds are 
 
 :x: `git clone` - Need to use The Point Guest wifi
 
-:x: `docker compose up -d` - 
+:x: `docker compose up -d` - For initial pulls use The Point Guest wifi
 
-:heavy_check_mark: `docker compose up -d` to set up Netbox
+:heavy_check_mark: `docker compose up -d` to re-startup Netbox after initial pulls are complete
 
 :heavy_check_mark: Use Netbox UI
 
