@@ -40,6 +40,7 @@ FIELD_CHOICES = {
 
 ### Create custom fields
 * Installation_date (Installation date), Date
+> NOTE: ISO 8601 format : YYYY-MM-DD
 * Enclosure_label (Enclosure label), Text
 * Barcode, Text, ^\d{12}$
 
