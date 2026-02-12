@@ -4,7 +4,7 @@ Everything sites
 * Manually add site groups : Roadside sites, Tx sites
 * Custom field choices
 * Custom fields
-
+* Sites by csv file
 
 ### Custom field choices (choice sets) 
 
@@ -55,6 +55,26 @@ SPC ATMg:SPC ATMg
 
 ### Manually add :
 * site groups : Roadside sites, Tx sites
-* tenants : NRTS, non NRTS
+* owners : NRTS, Non NRTS
 * regions - exported csv of names and slugs from original DB
-* 
+
+### csv headers (19) AKA site fields
+* cf_NL_UID
+* group
+* name
+* slug
+* status
+* cf_Road
+* cf_Marker_Post
+* cf_CW
+* cf_MP_Offset
+* cf_Hardshoulder
+* region
+* cf_Span	cf_SPC
+* latitude
+* longitude
+* owner
+* physical_address
+* cf_NRTS_ID	cf_TAF
+
+The csv is used to upload to netbox as a bulk import in the UI
