@@ -62,3 +62,8 @@ FIELD_CHOICES = {
 * comments
 * cf_NRTS_ID
 * cf_TAF			
+
+### Bulk import
+* Check date format
+* Check digit format - make text (barcode)
+* Open / edit with Notepad after exporting as csv - remove extra columns if needed, check all data is in correct format
