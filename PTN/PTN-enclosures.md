@@ -29,4 +29,35 @@ FIELD_CHOICES = {
 
 ### Add object types to custom fields
 * NL_UID (Location & Rack)
-* 
+* Road
+* MP
+* CW
+* MP Offset
+* Span
+* NRTS ID
+* TAF
+
+
+### Create custom fields
+* Installation_date (Installation date), Date
+* Enclosure_label (Enclosure label), Text
+* Barcode, Text, ^\d{12}$
+
+### csv headings 
+* cf_NL_UID	facility
+* name
+* slug
+* status
+* owner
+* site
+* parent
+* cf_Road
+* cf_Marker_Post
+* cf_CW	cf_MP_Offset
+* cf_Enclosure_label
+* cf_Barcode
+* cf_Span
+* cf_Installation_date
+* comments
+* cf_NRTS_ID
+* cf_TAF			
