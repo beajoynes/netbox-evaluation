@@ -8,6 +8,8 @@ Enclosures cover a range of objects which I have chosen to model these as two ma
 * 1830 DCM shelf (Rack)
 
 
+My other thought was creating a custom object but I thought it best to keep it as simple as possible and work with core Netbox.
+
 ### Add field choices to configuration.py
 ```
 FIELD_CHOICES = {
