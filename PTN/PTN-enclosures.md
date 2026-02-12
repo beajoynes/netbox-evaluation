@@ -40,7 +40,7 @@ FIELD_CHOICES = {
 
 ### Create custom fields
 * Installation_date (Installation date), Date
-> NOTE: ISO 8601 format : YYYY-MM-DD
+> NOTE: ISO 8601 format : YYYY-MM-DD - Use DATEVALUE function in excel
 * Enclosure_label (Enclosure label), Text
 * Barcode, Text, ^\d{12}$
 
