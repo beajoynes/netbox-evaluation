@@ -106,4 +106,7 @@ Rack type  (After checking the product catalogue shared with me by Karl G, I cou
 * 600 Cabinet, Generic, 4-post cabinet
 
 ### csv headers () 
-In Netbox, racks require a site value, could explore the parent-child field object relation I made later on? For now I am adding in sites to the spreadsheet where they aren't already there
+In Netbox, racks require a site value, could explore the parent-child field object relation I made later on? For now I am adding in sites to the spreadsheet where they aren't already there.
+
+Parent racks and child racks on separate sheets so the parent racks exist on import. Parent enclosures are referenced by their rack object ID (number only). Need to find 
+
