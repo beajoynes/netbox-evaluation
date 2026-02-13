@@ -24,3 +24,7 @@ Processing unit, processing-unit, 830715
 Storage, storage, cdcc81
 Server, server, 8f81cd
 ```
+
+### Device types
+Product name 
+
