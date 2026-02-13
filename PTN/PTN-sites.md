@@ -70,11 +70,13 @@ SPC ATMg:SPC ATMg
 * cf_MP_Offset
 * cf_Hardshoulder
 * region
-* cf_Span	cf_SPC
+* cf_Span
+* cf_SPC
 * latitude
 * longitude
 * owner
 * physical_address
-* cf_NRTS_ID	cf_TAF
+* cf_NRTS_ID
+* cf_TAF
 
 The csv is used to upload to netbox as a bulk import in the UI
