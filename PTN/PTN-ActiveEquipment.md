@@ -115,6 +115,7 @@ Unfilled Fields
 
 ### csv headers
 * cf_NL_UID  = NL UID
+* manufacturer
 * device_type = Product Name
 * name = Name
 * status = Asset Status  -- ensure the statuses are updated to the correct import value
@@ -163,3 +164,6 @@ Leave “Replace with” completely empty.
 Click “Replace All”.
 '''
 > '*' is a wildcard meaning “any characters after this”, so this removes the colon and everything after it in each selected cell.
+
+### manufacturer 
+Annoyingly this is also required in Netbox despite device types having this information already inputted (worth bringing up with them?) but can use  `XLOOKUP` again to find them from the device type sheet.
