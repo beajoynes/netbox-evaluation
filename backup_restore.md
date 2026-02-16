@@ -121,6 +121,11 @@ Run netbox_backup.sh every hour at 20minutes past the hour, with a silenced out 
 ```
 20 * * * * /home/bea/git/netbox-docker/backups/netbox_backup.sh >/dev/null 2>&1
 ```
+
+> **Note**
+> Cron jobs only run when system is powered on - don't run jobs for times when laptop is off!
+
+
 Check this is working by looking into the directory that should be created, files should be made at the time specified.
 
 ### Troubleshooting
