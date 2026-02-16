@@ -47,6 +47,8 @@ Create custom fields
 * Critical_asset (Critical Asset), Boolean
 * Stack_name (Stack name), selection
 * Stack_position (stack position), integer
+* String_name (String name),  Text
+* String_position (String position), integer
 
 
 * String name - text or selection ??
@@ -101,8 +103,63 @@ Parent device will be represented by the netbox built in 'device bay' object.
 > Bulk import requires manufacturer but manually adding does not. ????
 
 
-
 Unfilled Fields
 * Left out IPAM for now 
 * Left out any fully blank columns also
 * PCX - not got much filled, 4 records
+* = SW Cluster ????
+* = ManagedBy ????
+* = PCX Config Number ????
+* = PCX Domain ????
+
+
+### csv headers
+* cf_NL_UID  = NL UID
+* device_type = Product Name
+* name = Name
+* status = Asset Status  -- ensure the statuses are updated to the correct import value
+* owner = Owner
+* site = REQUIRED BY NETBOX -- Not in the active equipment data extract * 
+* rack = Parent Enclosure
+* device_bay = Parent Equipment
+* cf_Barcode = Barcode
+* serial = Serial Number
+* cf_Installation_date = Installation Date
+* cf_Critical_Asset = Critical Asset
+* cf_Stack_name = Stack Name
+* cf_Stack_position = Stack Position
+* cf_String_Name = String Name
+* cf_String_Position = String Position
+* cf_NRTS_ID = NRTS ID
+* cf_TAF = TAF
+
+### * sites  (and racks of child equipment)
+Sites are a required field in Netbox, yet there is not currently a field in the ECM.
+
+Thinking of using the enclosures field and corresponding sheet to auto fill the site field.
+
+`=XLOOKUP(G2, 'PTN rack (parents)'!C2:C32, 'PTN rack (parents)'!F2:F32)`
+=
+Works fine but error for the shelf / child racks - this is expected as it refers to a separate sheet. Simply use the following in those error cells :
+
+`=XLOOKUP(G38, 'PTN rack (children)'!C:C, 'PTN rack (children)'!F:F)`
+
+Also have an error where there are child equipment that don't have 'rack' filled out, should be able to fill these missing rack values out in a similar way to sites.
+
+`=XLOOKUP(H149, C:C, G:G)`
+
+### Find & Replace (in-place change) -- For device types that have a trailing ':' for location reference
+'''
+Select the whole column.
+
+Press Ctrl + H (Find and Replace).
+
+In “Find what”, type:
+
+text
+:*
+Leave “Replace with” completely empty.
+
+Click “Replace All”.
+'''
+> '*' is a wildcard meaning “any characters after this”, so this removes the colon and everything after it in each selected cell.
