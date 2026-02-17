@@ -40,7 +40,22 @@ Device and name can be filled out by copying both (Source and Destination) devic
 Interface type can be selected from an extensive range, of which for now I am putting all interfaces as '1000base-t' while still unsure of the true types.
 
 ```
-COLE-SWCH-01-PTN  |	 ge-0/0/10	 |  1000base-t
+COLE-SWCH-01-PTN	 ge-0/0/10  1000base-t
+PTN WL APN Gateway	Core1	1000base-t
+PTN WL APN Gateway	Core2	1000base-t
+XMJ1-XMJ2-M540-02-010	ETH-5	1000base-t
+XMJ1-XMJ2-M540-02-010	ETH-6	1000base-t
+XMJ1-XMJ2-M540-03-010	ETH-5	1000base-t
+XMJ1-XMJ2-M540-03-030	ETH-6	1000base-t
+XMJ1-XMJ2-M540-08-010,ETH-5,1000base-t
+XMJ1-XMJ2-M540-08-040,ETH-6,1000base-t
+XMJ1-XMJ2-VE1S-01-012,P3,1000base-t
+XMJ1-XMN1-M540-04-020,ETH-6,1000base-t
+XMJ1-XMN1-SA8X-04-930,8,1000base-t
+XMJ1-XRC1-EX43-01-030,xe-0/2/0,1000base-t
 ```
-The above entry contains a device that does not exist in the PTN, I believe it is a connection to the COLE Switch - essentially connecting the PTN to the NRTS network ?
-For now I have deleted it from my sheet but wanted to keep a record here.
+The above entries contains a device that does not exist in the PTN, I believe one is a connection to the COLE Switch - essentially connecting the PTN to the NRTS network ?
+For now I have deleted them from my sheet but wanted to keep a record here.
+
+
+So many are missing??? why is this??
