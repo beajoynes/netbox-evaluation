@@ -1,6 +1,6 @@
 Data extract fields :
 * Connection Type - All 'Network Link', won't input into Netbox
-* TrafficType - Custom field 
+* TrafficType - Custom field (cf_Traffic_type)
 * Source Device 
 * Source Port - Netbox has device components : Interfaces, Console ports, Front ports, Rear ports, ... -- which is best? ASKED KARL 
 * Dest Device
