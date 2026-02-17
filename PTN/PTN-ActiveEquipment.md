@@ -115,7 +115,8 @@ Unfilled Fields
 
 ### csv headers
 * cf_NL_UID  = NL UID
-* manufacturer
+* role = REQUIRED BY NETBOX 
+* manufacturer = REQUIRED BY NETBOX 
 * device_type = Product Name
 * name = Name
 * status = Asset Status  -- ensure the statuses are updated to the correct import value
@@ -140,7 +141,7 @@ Sites are a required field in Netbox, yet there is not currently a field in the 
 Thinking of using the enclosures field and corresponding sheet to auto fill the site field.
 
 `=XLOOKUP(G2, 'PTN rack (parents)'!C2:C32, 'PTN rack (parents)'!F2:F32)`
-=
+
 Works fine but error for the shelf / child racks - this is expected as it refers to a separate sheet. Simply use the following in those error cells :
 
 `=XLOOKUP(G38, 'PTN rack (children)'!C:C, 'PTN rack (children)'!F:F)`
@@ -167,3 +168,38 @@ Click “Replace All”.
 
 ### manufacturer 
 Annoyingly this is also required in Netbox despite device types having this information already inputted (worth bringing up with them?) but can use  `XLOOKUP` again to find them from the device type sheet.
+
+### installation date 
+Change format!
+
+### Position 
+
+The position of the device in a rack is needed to be able to produce rack elevations - this information is currently not accessable to me, but will be useful to find out.
+
+
+### Device bays
+
+For our active equipment with parent equipment to be organised into Netbox we need to add device bays to the parent equipment - this can simply be imported using the device name and name for the device bay. From the data extract given, there doesn't appear to be any device bay equivalent so I will be simply use the nameing convention as 'device bay x' as the name just needs to be unique to the device. 
+
+When importing device bays in bulk, you can add an already existing device in as part of the import under 'installed_device' so I will remove the device bay column* from the device import sheet and add all the devices before adding the device bays with their child devices as a separate sheet. 
+
+For the device bay sheet, as there are not many child devices in the PTN, I simply copied all the values of the parent enclosure column, filled out the device bay names as needed and again simply copied in the installed device from the corresponding name column in the active equipment.
+
+* I used this device bay column as part of the formula to fill in the rack column (and in turn the site column) so deleting it causes a ref error.  To stop this, I highlighted the affected cells, copied them and pasted them back as special (values only).
+
+### Parent - child
+
+The ability for a device to be a parent or child is determined in the device type - though this can't be added in the bulk import. Starting by manually (in Netbox UI), I will update the device type (Starting with 1830 PSS-32, the first parent device type) with the parent/child status as parent. I then have tried to upload the 'device bays' sheet to bulk import. The records of that device type now all work. Repeat with all parent device types (Used `=XLOOKUP(G2, 'PTN devices'!E:E, 'PTN devices'!D:D)`, to populate the parent device types in 'PTN device info' sheet.
+
+PARENTS
+* 1830 PSS-32
+* DL360 Server
+* Verint NVR
+
+CHILDREN - Update device type parent/child status to child, U height = 0
+* 1830 SFDC8A
+* 1830 SFD44
+* VM Server
+* NVR Raid
+  
+  
