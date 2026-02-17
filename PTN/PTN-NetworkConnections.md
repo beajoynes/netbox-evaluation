@@ -30,3 +30,17 @@ Custom field
 * Selection
 * Traffic type
 * Choiceset traffic types
+
+
+### Interfaces
+
+Created a sheet 'PTN interfaces' with the column headers as the required fields for Netbox : device, name and type.
+Device and name can be filled out by copying both (Source and Destination) device columns from the data extract as well as both (Source and Destination) port columns.
+
+Interface type can be selected from an extensive range, of which for now I am putting all interfaces as '1000base-t' while still unsure of the true types.
+
+```
+COLE-SWCH-01-PTN  |	 ge-0/0/10	 |  1000base-t
+```
+The above entry contains a device that does not exist in the PTN, I believe it is a connection to the COLE Switch - essentially connecting the PTN to the NRTS network ?
+For now I have deleted it from my sheet but wanted to keep a record here.
