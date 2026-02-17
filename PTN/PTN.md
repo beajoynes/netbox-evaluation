@@ -20,7 +20,7 @@
 * Adjust configuration.py file as needed to change status field choices
 * Add custom fields to netbox
 * Manually add tenants, region, site groups, small objects
-* Translate to Netbox friendly csv
+* Translate data extract to Netbox friendly csv (using excel sheets)
 * Proof check for correct names!! ETC
 * Upload into netbox 
 * How is exported  ??? QLIK V CMDB
@@ -34,6 +34,8 @@
   - Site, Device role, Device type before Device 
   - 
 
+### Spans 
+Could be modelled by circuits?? Need provider though
 
 ### PTN
 * Order of fields ? Importance
