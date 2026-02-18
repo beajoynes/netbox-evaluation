@@ -3,6 +3,12 @@
 * Is it possible to customise status options???? https://github.com/netbox-community/netbox/blob/main/docs/configuration/data-validation.md#field_choices
 
 
+### KG 18.02.26
+* Device NL UID naming conventions
+* Sheets sent to TMIP (NRTS-ComputerSystems) - Much more useful info! eg manufacturer and model as part - no more looking up from product catalogue
+* Use TMIP data to fill out 
+
+
 ### Issues with current PTN
 * Spreadsheet overload
 * Confusing
@@ -14,7 +20,8 @@
 * Fields / acronyms people don't know the meaning of! (E.g. TM requirement)
 * No population model document for NRTS 2 (There was for NRTS 1)
 * Confusion of where dummy locations come into play/ how far it goes as lat/long exist
-* PTN filtered out ??? 
+* PTN filtered out ???
+* QLIK v CMDB v ECM v TMIP 
 
 ### Best practices for import
 * fresh netbox instance
