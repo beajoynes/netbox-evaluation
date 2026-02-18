@@ -1,5 +1,10 @@
 New sheet should have all the data!
 
+
+* Repopulate Netbox ?!
+* Keep OG, delete offending records from sheet, populate as is for now - demo on Thursday or Friday ?
+
+
 ### Fields
 * ReconId - Custom field (Unique text)
 * Status - status (need to update custom field in config - add Deployed) - delete column as already have a status column with familiar fields
@@ -52,7 +57,6 @@ New sheet should have all the data!
 * cf_String_position --	IPAddress	Chassis	Rack	CabinetName	Location	Chassis_reconid	Rack_reconid	Cabinet_reconid	Location_reconid	HostName	TSA	TSB	ElectronicAddress	PCXDomain	Region	Status_Reason	PrimaryCapability		
 
 
-Repopulate Netbox ?!
 
 Filter the 'item' column to show devices only. 
 
