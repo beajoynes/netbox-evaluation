@@ -19,7 +19,7 @@ New sheet should have all the data!
 * IPAddress - only one, much simpler then all the IP data from other sheet
 * Chassis - NO DATA for device
 * Rack - rack
-* CabinetName -
+* CabinetName - rack / site ?? location ?
 * Location - location
 * Chassis_reconid - NOT NEEDED, Netbox embedded id / object relations
 * Rack_reconid - NOT NEEDED
@@ -29,9 +29,9 @@ New sheet should have all the data!
 * HostName - NOT NEEDED, same as name?
 * TSA - ??
 * TSB - ?? 
-* ElectronicAddress - Not much data ?
+* ElectronicAddress - NOT MUCH DATA
 * PCXDomain - NO DATA
-* Region - region, all 'WMCC'
+* Region - region, not all 'WMCC' ?!?! 268 WMCC, 26 ERCC
 * Status_Reason - Same as status? Has all as 'In Service'
 * PrimaryCapability - role !!!
 
