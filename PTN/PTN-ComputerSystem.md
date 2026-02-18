@@ -1,7 +1,7 @@
 New sheet should have all the data!
 
 ### Fields
-* ReconId - Custom field
+* ReconId - Custom field (Unique text)
 * Status - status (need to update custom field in config - add Deployed)
 * AssetID - NL_UID
 * Category - Selection : Physical component, (Blank) -- custom field
