@@ -74,3 +74,7 @@ Generic,	generic
 Netcomm,	netcomm 
 Alcatel Lucent,	alcatel-lucent
 ```
+### Device types
+New sheet - PTN device types (2)
+
+Uploaded using id to modify existing Devices, SUCCESS but forgot to keep u_height as 0 for child devices? 
