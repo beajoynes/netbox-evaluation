@@ -6,7 +6,7 @@
 ### KG 18.02.26
 * Device NL UID naming conventions
 * Sheets sent to TMIP (NRTS-ComputerSystems) - Much more useful info! eg manufacturer and model as part - no more looking up from product catalogue
-* Use TMIP data to fill out 
+* Use TMIP computer system data to fill out - oveer loadddd DOCUMENT
 
 
 ### Issues with current PTN
