@@ -16,3 +16,32 @@ FIELD_CHOICES = {
 ```
 
 > **NOTE** : The first choice will be the default
+
+
+### All the field choices I added
+```
+FIELD_CHOICES = {
+    'dcim.Site.status': (
+        ('in_service', 'In Service', 'green'),
+        ('decommissioned', 'Decommissioned', 'red'),
+        ('commissioned', 'Commissioned', 'yellow'),
+    ),
+
+    'dcim.device.status': (
+        ('in_service', 'In Service', 'green'),
+        ('decommissioned', 'Decommissioned', 'red'),
+        ('commissioned', 'Commissioned', 'yellow'),
+    ),
+    'dcim.location.status': (
+        ('in_service', 'In Service', 'green'),
+        ('decommissioned', 'Decommissioned', 'red'),
+        ('commissioned', 'Commissioned', 'yellow'),
+    ),
+    'dcim.rack.status': (
+        ('in_service', 'In Service', 'green'),
+        ('decommissioned', 'Decommissioned', 'red'),
+        ('commissioned', 'Commissioned', 'yellow'),
+    )
+
+}
+```
