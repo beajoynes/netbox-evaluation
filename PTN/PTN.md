@@ -2,6 +2,8 @@
 * What is alarm correlation and LOE exactly ?
 * Is it possible to customise status options???? https://github.com/netbox-community/netbox/blob/main/docs/configuration/data-validation.md#field_choices
 
+## 19.02.26
+To get the connections into Netbox, I have used more excel formulas to check side a and side b exist (`=IF(COUNTIFS( 'PTN interface check'!$M:$M, B237, 'PTN interface check'!$N:$N, D237)`) and then that both exist (`=IF(AND(J2="Exists", L2="Exists"), "Match", "No Match")`). Then sort (custom) by the 'both exist' column such that all the 'No match are at the bottom and the records that match are copued to a new sheet 'PTN connect v2'.
 
 ### KG 18.02.26
 * Device NL UID naming conventions
@@ -21,7 +23,8 @@
 * No population model document for NRTS 2 (There was for NRTS 1)
 * Confusion of where dummy locations come into play/ how far it goes as lat/long exist
 * PTN filtered out ???
-* QLIK v CMDB v ECM v TMIP 
+* QLIK v CMDB v ECM v TMIP
+* Repeated connections ?!
 
 ### Best practices for import
 * fresh netbox instance
