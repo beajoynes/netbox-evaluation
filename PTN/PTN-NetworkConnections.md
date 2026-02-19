@@ -57,5 +57,17 @@ XMJ1-XRC1-EX43-01-030,xe-0/2/0,1000base-t
 The above entries contains a device that does not exist in the PTN, I believe one is a connection to the COLE Switch - essentially connecting the PTN to the NRTS network ?
 For now I have deleted them from my sheet but wanted to keep a record here.
 
+Turns out the data I was given does not contain all the devices needed in the connections, I have used an array of formulas in Excel to whittle it down to the devices I actually have imported to Netbox.
 
-So many are missing??? why is this??
+I needed to import interfaces onto the existing devices.
+
+Then I need to check through the connections sheet for duplicates, as I believe the sheet has both sides of some (or all?) connections - i.e. side a to side b AND side b to side a. Use '=IF( B2&E2 < E2&B2,
+     B2 & "|" & D2 & "|" & E2 & "|" & G2,
+     E2 & "|" & G2 & "|" & B2 & "|" & D2
+)' to create a column which gives the duplicates an identical key.
+
+Then will use Remove duplicates on the key column (while all data is selected) to leave only the unique connections. 44 removed, 348 remain ??. Then delete key column before exporting.
+
+
+
+So many are missing??? why is this?? - different data extracts
