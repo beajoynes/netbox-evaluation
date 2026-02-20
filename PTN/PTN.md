@@ -83,7 +83,7 @@ Could be modelled by circuits?? Need provider though
 
 # Questions for Karl/Bryce
 
-* Shelf
+* What is a Shelf? 
 * TM requirement -- Bryce ?
 * How set on status names ? Netbox v NRTS - Will the current statuses work
 * - For some, dates back - important for billing. See about chagning it in NetBox itself
