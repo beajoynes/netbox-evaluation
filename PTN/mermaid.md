@@ -53,5 +53,8 @@ flowchart LR
         D14-19[cf_NL_UID]
     end
 
+    %% ALL CONNECTIONS VERIFIED
+    API3 -.-> D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9 & D10 & D11 & D12 & D13 & D14
+    D14 -.-> D14-1 & D14-2 & D14-3 & D14-4 & D14-5 & D14-6 & D14-7 & D14-8 & D14-9 & D14-10 & D14-11 & D14-12 & D14-13 & D14-14 & D14-15 & D14-16 & D14-17 & D14-18 & D14-19
 
 ```
