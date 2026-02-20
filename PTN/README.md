@@ -1,4 +1,4 @@
-Best practice for PTN import
+# Best practice for PTN import
 
 1. fresh netbox instance
 2. Adjust configuration.py file as needed to change status field choices
@@ -10,7 +10,8 @@ Best practice for PTN import
 8. Upload into netbox using bulk import
 
 
-Order for import
+
+## Order for import
 
 1. sites
 2. locations
